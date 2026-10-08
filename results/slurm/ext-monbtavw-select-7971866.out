@@ -1,2 +1,7 @@
 TBB Warning: The number of workers is currently limited to 1. The request for 111 workers is ignored. Further requests for more workers will be silently ignored until the limit changes.
 
+1702 frames, 101486 atoms (0s)
+descriptors (101486, 378) (611s)
+wrote data/external/monbtavw/train_desc.xyz (625s)
+TBB Warning: The number of workers is currently limited to 1. The request for 111 workers is ignored. Further requests for more workers will be silently ignored until the limit changes.
+

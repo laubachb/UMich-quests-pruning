@@ -19,3 +19,5 @@ results/pruned/
 results/paper/rdf_data_summary.json
 # external datasets
 data/external/*/*.xyz
+results/test_distance/nn_distances.csv
+results/test_distance/test_descriptors.npy

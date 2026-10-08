@@ -1,0 +1,19 @@
+train: 134720 envs (2s)
+test->train NN (78s)
+train->train LOO NN (45s)
+test->train(5% stratified) NN
+
+test group                        n            test->train       train->train LOO  ratio same-grp  ->5% subset
+test_HD_liquid_2.0gcc_6000     6400     0.0705     0.0884     0.0679     0.0876   1.04     0.64       0.1047
+test_HD_liquid_2.0gcc_7000     6400     0.0721     0.0903     0.0713     0.0913   1.01     0.22       0.1065
+test_HD_liquid_2.5gcc_6000    20000     0.0672     0.0845     0.0653     0.0801   1.03     0.45       0.0882
+test_HD_liquid_3.0gcc_8000     6400     0.0668     0.0825     0.0609     0.0780   1.10     0.90       0.0947
+test_HD_liquid_3.6gcc_6000    20000     0.0652     0.0805     0.0582     0.0750   1.12     0.74       0.0922
+test_LD_liquid_0.5gcc_1000     6400     0.0282     0.0537     0.0287     0.0582   0.98     0.86       0.0747
+test_LD_liquid_0.5gcc_2000     6400     0.0509     0.0719     0.0520     0.0700   0.98     0.75       0.0814
+test_diamond_3.67gcc_3000     21600     0.0376     0.0472     0.0320     0.0447   1.17     0.98       0.0505
+test_diamond_3.68gcc_300      21600     0.0134     0.0198     0.0098     0.0196   1.37     0.94       0.0239
+test_graphite_2.39gcc_300     38400     0.0206     0.0269     0.0079     0.0155   2.60     0.99       0.0274
+test_graphite_2.56gcc_1500    38400     0.0336     0.0405     0.0296     0.0383   1.14     0.56       0.0480
+test_graphite_2.67gcc_3000    38400     0.0402     0.0496     0.0391     0.0512   1.03     0.89       0.0570
+done (132s) -> results/test_distance

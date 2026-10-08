@@ -21,10 +21,16 @@ def main():
     ap.add_argument("xyz")
     ap.add_argument("fps_dir")
     ap.add_argument("out_dir")
-    ap.add_argument("--fractions", type=float, nargs="+", required=True)
+    ap.add_argument("--fractions", type=float, nargs="*", default=[])
+    ap.add_argument("--budget", default=None,
+                    help="JSON {scope: fraction} giving a DIFFERENT retention per scope "
+                         "(e.g. elbow-derived, from pruning/elbow.py); writes one file "
+                         "tagged 'adaptive' instead of a sweep")
     ap.add_argument("--drop-descriptors", action="store_true",
                     help="omit the descriptor array from the output (smaller files)")
     args = ap.parse_args()
+    if not args.fractions and not args.budget:
+        ap.error("give --fractions and/or --budget")
 
     meta = json.load(open(Path(args.fps_dir) / "fps_meta.json"))
     frames = read(args.xyz, ":")
@@ -37,16 +43,22 @@ def main():
     out = Path(args.out_dir)
     out.mkdir(parents=True, exist_ok=True)
     summary = []
-    for f in args.fractions:
+    jobs = [(f, {s: f for s in orders}, f"{f:.3f}") for f in args.fractions]
+    if args.budget:
+        budget = json.load(open(args.budget))
+        missing = set(orders) - set(budget)
+        assert not missing, f"budget.json lacks scopes: {sorted(missing)}"
+        tot = sum(budget[s] * len(orders[s]) for s in orders) / n
+        jobs.append((tot, budget, "adaptive"))
+    for f, per_scope, tag in jobs:
         mask = np.zeros(n, dtype=np.int8)
         for s, order in orders.items():
-            k = int(round(f * len(order)))
+            k = int(round(per_scope[s] * len(order)))
             mask[order[:k]] = 1
         for i, a in enumerate(frames):
             a.arrays["weights"] = mask[offsets[i]:offsets[i + 1]].astype(float)
             if args.drop_descriptors:
                 a.arrays.pop(meta["desc_key"], None)
-        tag = f"{f:.3f}"
         path = out / f"{Path(args.xyz).stem}_{tag}_{meta['mode']}_s{meta['fps_seed']}.xyz"
         write(path, frames)
         frames_touched = int(sum(mask[offsets[i]:offsets[i + 1]].any() for i in range(len(frames))))

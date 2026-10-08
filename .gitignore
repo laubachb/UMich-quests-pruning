@@ -13,3 +13,5 @@ __pycache__/
 outputs/
 slurm_output/
 *.egg-info/
+results/fps/*/*.npy
+results/timing_cpu/

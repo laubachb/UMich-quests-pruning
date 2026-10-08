@@ -28,9 +28,14 @@ The original training jobs were submitted through LLNL Orchestrator
 
 ## Compute
 
-`dane` is CPU-only (112 cores/node). Measured with `training/run_timing_cpu.sh`
-(nequip 0.19.1, 32 threads): ~25 s per batch of 2 frames → ~2.4 h per epoch on
-the full training set. The paper's models train for up to 1000 epochs with
+`dane` is CPU-only (112 cores/node). Measured per batch of 2 frames on dane5:
+
+| stack | threads | s/batch | h/epoch (342 batches) |
+|---|---|---|---|
+| nequip 0.19.1 (`venv`) | 32 | 25–29 | ~2.5 |
+| nequip 0.9.1 (`venv-paper`, `training/configs/paper_smoke_cpu.yaml`) | 16 | ~5 | ~0.5 |
+
+The paper config loads and trains unmodified in `venv-paper`. The paper's models train for up to 1000 epochs with
 early stopping (patience 20); the full sweep is 28 retention levels × 2 methods
 × ~10 seeds ≈ 560 models. **Training must run on a GPU machine.** CPU nodes are
 fine for everything else: QUESTS descriptors/entropies, FPS, elbow selection,

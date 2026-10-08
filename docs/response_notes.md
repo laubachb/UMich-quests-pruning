@@ -60,9 +60,19 @@ CUR / DFT-MD subsampling literature).
 do this (1 environment for two crystal groups at 5 %); stratification is the mechanism. E5 vs E4
 tests whether per-group budgets add anything beyond equal-fraction stratification.
 
-**#2 Multi-element systems.** PENDING. SiO2 (Erhard 2022, 16 groups) and MoNbTaVW (Byggmastar 2021,
-19 groups) prepared with trajectory-disjoint test splits; QUESTS multicomponent descriptor; FPS,
-random baselines and accounting done for MoNbTaVW; f_uniq sweeps queued. GPU: 57 jobs each.
+**#2 Multi-element systems.** DONE (selection side). SiO2 (Erhard 2022, Zenodo 6353684; 16 groups:
+13 polymorphs + liquid/quench/amorphous) and MoNbTaVW (Byggmastar 2021, ColabFit; 19 configuration
+sets: alloys, liquids, point defects, surfaces) with contiguous held-out test blocks per group;
+QUESTS multicomponent descriptor. Findings mirror carbon and are sharper:
+- Global FPS at 5 %: SiO2 liquid+quench+amorphous take 98.5 % of the budget, low-cristobalite keeps
+  0 environments, most polymorphs 1-16. MoNbTaVW liquid takes 64 %; divacancy 1 env.
+  (`figures/out/retention_accounting_{sio2,monbtavw}.png`)
+- f_uniq(h) sigmoids per group; log-h elbow rule gives h* 0.02-0.06 (SiO2) and 0.015-0.19 (MoNbTaVW,
+  defect groups show a two-step decline: bulk-like environments merge first). Stable to 25-75 %
+  subsampling (<= 1 grid step). (`figures/out/funiq_curves_{sio2,monbtavw}.png`)
+- Test/train NN-distance ratio ~1 for MoNbTaVW (held-out block is as independent as a random split);
+  SiO2 PENDING.
+GPU: 66 jobs each (E1-E5), `training/jobs_{sio2,monbtavw}.txt`.
 
 **#3 Length.** Editorial: cut abstract to <200 words, compress Sec. 1.1 and 2.1 background.
 

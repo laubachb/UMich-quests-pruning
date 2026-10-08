@@ -36,9 +36,21 @@ runs use seeds 0,1,2 (E1-E5).
 
 ## Reviewer 2
 
-**#1 Elbow exists for uniform distributions too.** PENDING null test (`pruning/funiq_null.py`, job
-running): f_uniq(h) on a covariance-matched Gaussian and a column-shuffled surrogate of each group's
-descriptors, same n/d/h-grid; compare elbow h* and f_uniq with the real group. Agree in part. The elbow is an operational scale,
+**#1 Elbow exists for uniform distributions too.** DONE, and the reviewer is right.
+`results/funiq/null_s0/real_vs_null.csv` (`pruning/funiq_null.py`): f_uniq(h) on a covariance-matched
+Gaussian and on a column-shuffled surrogate of each group's descriptors (same n, d, h grid). The
+Gaussian surrogate elbows at the same h* as the real group (median ratio 1.02; 11 of 14 groups within
+15 %) and at the same f_uniq (0.34-0.37 for every surrogate; 0.30-0.37 for real groups except LD liquid
+1.0 g/cc 0.52 and the two cold curves). Hence: (i) h* is set by the group's second moments, i.e. its
+characteristic spread in descriptor space, which is what the paper claims it calibrates; (ii) the
+elbow *retention* f_uniq(h*) is a near-constant ~1/3 for any smooth unimodal cloud and is NOT a
+redundancy measurement; (iii) what does distinguish real from surrogate is f_uniq at small fixed h
+(crystals 0.25-0.85 real vs 0.36-0.99 Gaussian): near-duplicate environments are detected by the
+entropy at small h, not by the elbow. Consequence for the revision: Stratified-Adaptive is, to within
+noise, Stratified-Fixed at ~1/3 retention per group; E5 (flat 31 %) vs E4 will quantify the residual.
+The defensible claims are stratification (large, CI-backed) and h* as a per-group length scale that
+coincides with the FPS covering radius at that retention (R2 #3). The elbow-as-redundancy-detector
+claim should be withdrawn or restated. The elbow is an operational scale,
 not a redundancy proof. Evidence that it is informative: elbow h* differs by 7x between diamond 300 K
 and HD liquids; f_uniq(0.015) says 99 % of liquid environments are unique, the elbow says 20-35 %.
 Robustness: see R1 #3. PENDING: same curves on SiO2 (14 polymorphs + liquid/amorphous) and MoNbTaVW.

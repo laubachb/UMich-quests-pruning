@@ -55,3 +55,6 @@ training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_strat
 training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 0 results/models/E3_full/seed0 gpu
 training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 1 results/models/E3_full/seed1 gpu
 training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 2 results/models/E3_full/seed2 gpu
+training/train_one.sh results/pruned/adaptive_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 0 results/models/E4_adaptive/seed0 gpu
+training/train_one.sh results/pruned/adaptive_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 1 results/models/E4_adaptive/seed1 gpu
+training/train_one.sh results/pruned/adaptive_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 2 results/models/E4_adaptive/seed2 gpu

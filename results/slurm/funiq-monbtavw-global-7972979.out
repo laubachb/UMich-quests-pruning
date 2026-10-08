@@ -1,0 +1,9 @@
+loaded 1702 frames, 101486 envs (7.0s)
+resuming; 0 scopes already done
+  global                       sub=1.00 rep=0 n=101486 h*_kneedle=0.0163 (f=0.896)  h*_curv=0.5000 (f=0.054)  f(0.015)=0.913  (79.2s)
+  global                       sub=0.25 rep=0 n= 25372 h*_kneedle=0.0206 (f=0.891)  h*_curv=0.0102 (f=0.983)  f(0.015)=0.947  (17.5s)
+  global                       sub=0.25 rep=1 n= 25372 h*_kneedle=0.0206 (f=0.891)  h*_curv=0.0102 (f=0.983)  f(0.015)=0.947  (25.1s)
+  global                       sub=0.50 rep=0 n= 50743 h*_kneedle=0.0183 (f=0.893)  h*_curv=0.5000 (f=0.058)  f(0.015)=0.931  (47.6s)
+  global                       sub=0.50 rep=1 n= 50743 h*_kneedle=0.0183 (f=0.893)  h*_curv=0.5000 (f=0.058)  f(0.015)=0.931  (55.7s)
+done in 232.2s -> results/ext/monbtavw/funiq/global_s0
+DONE monbtavw global

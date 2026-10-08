@@ -19,11 +19,11 @@ select)
   [ -f "$TR" ] || python3 pruning/compute_descriptors.py $D/train.xyz --out $TR --species $SPECIES
   [ -f "$TE" ] || python3 pruning/compute_descriptors.py $D/test.xyz  --out $TE --species $SPECIES
   for s in 0 1; do
-    python3 pruning/fps.py $TR --out-dir $R/fps/stratified_s$s --mode stratified --fps-seed $s
-    python3 pruning/fps.py $TR --out-dir $R/fps/global_s$s     --mode global     --fps-seed $s
+    [ -f $R/fps/stratified_s$s/fps_meta.json ] || python3 pruning/fps.py $TR --out-dir $R/fps/stratified_s$s --mode stratified --fps-seed $s
+    [ -f $R/fps/global_s$s/fps_meta.json ]     || python3 pruning/fps.py $TR --out-dir $R/fps/global_s$s     --mode global     --fps-seed $s
   done
-  python3 pruning/random_order.py $TR --out-dir $R/fps/random_stratified_s0 --mode stratified --seed 0
-  python3 pruning/random_order.py $TR --out-dir $R/fps/random_global_s0     --mode global     --seed 0
+  [ -f $R/fps/random_stratified_s0/fps_meta.json ] || python3 pruning/random_order.py $TR --out-dir $R/fps/random_stratified_s0 --mode stratified --seed 0
+  [ -f $R/fps/random_global_s0/fps_meta.json ]     || python3 pruning/random_order.py $TR --out-dir $R/fps/random_global_s0     --mode global     --seed 0
   mkdir -p $R/stats
   for sel in stratified_s0 stratified_s1 global_s0 global_s1 random_stratified_s0 random_global_s0; do
     python3 pruning/retention_accounting.py $TR $R/fps/$sel $R/stats/retention_accounting_$sel.csv > /dev/null

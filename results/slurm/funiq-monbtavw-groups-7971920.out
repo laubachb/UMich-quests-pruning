@@ -1,0 +1,8 @@
+loaded 1702 frames, 101486 envs (7.0s)
+  BCC_alloys                   sub=1.00 rep=0 n= 26730 h*_kneedle=0.0145 (f=0.959)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.950  (18.3s)
+  BCC_alloys                   sub=0.25 rep=0 n=  6682 h*_kneedle=0.0183 (f=0.949)  h*_curv=0.5000 (f=0.046)  f(0.015)=0.979  (4.3s)
+  BCC_alloys                   sub=0.25 rep=1 n=  6682 h*_kneedle=0.0183 (f=0.950)  h*_curv=0.5000 (f=0.046)  f(0.015)=0.979  (5.1s)
+  BCC_alloys                   sub=0.25 rep=2 n=  6682 h*_kneedle=0.0183 (f=0.949)  h*_curv=0.5000 (f=0.046)  f(0.015)=0.980  (5.1s)
+  BCC_alloys                   sub=0.50 rep=0 n= 13365 h*_kneedle=0.0163 (f=0.953)  h*_curv=0.0114 (f=0.993)  f(0.015)=0.967  (10.9s)
+  BCC_alloys                   sub=0.50 rep=1 n= 13365 h*_kneedle=0.0163 (f=0.953)  h*_curv=0.0114 (f=0.993)  f(0.015)=0.967  (10.7s)
+[2026-10-08T12:57:47.890] error: *** JOB 7971920 ON dane266 CANCELLED AT 2026-10-08T12:57:47 DUE TO PREEMPTION ***

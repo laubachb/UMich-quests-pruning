@@ -77,7 +77,7 @@ QUESTS multicomponent descriptor. Findings mirror carbon and are sharper:
   defect groups show a two-step decline: bulk-like environments merge first). Stable to 25-75 %
   subsampling (<= 1 grid step). (`figures/out/funiq_curves_{sio2,monbtavw}.png`)
 - Test/train NN-distance ratio ~1 for MoNbTaVW (held-out block is as independent as a random split);
-  SiO2 PENDING.
+  SiO2: ratios 1.0-2.2, the contiguous held-out block is farther than a random split would be.
 GPU: 66 jobs each (E1-E5), `training/jobs_{sio2,monbtavw}.txt`.
 
 **#3 Length.** Editorial: cut abstract to <200 words, compress Sec. 1.1 and 2.1 background.

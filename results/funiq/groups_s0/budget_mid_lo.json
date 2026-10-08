@@ -1,0 +1,17 @@
+{
+ "_provenance": "f_uniq at the log-h elbow: midpoint between the inflection of f_uniq(log h) and its lower max-curvature bend (pruning/elbow_logh.py). Reproduces the paper's elbow table to RMS 0.09 in f_uniq and 9% in h*.",
+ "HD liquid_2.0gcc_6000": 0.3649,
+ "HD liquid_2.0gcc_7000": 0.3355,
+ "HD liquid_2.5gcc_6000": 0.3383,
+ "HD liquid_3.0gcc_8000": 0.3474,
+ "HD liquid_3.6gcc_6000": 0.3383,
+ "LD liquid_0.5gcc_1000": 0.2666,
+ "LD liquid_1.0gcc_2000": 0.5168,
+ "diamond_0.0gcc_CC": 0.1251,
+ "diamond_3.67gcc_3000": 0.2975,
+ "diamond_3.68gcc_300": 0.2994,
+ "graphite_0.0gcc_CC": 0.1108,
+ "graphite_2.39gcc_300": 0.3294,
+ "graphite_2.56gcc_1500": 0.3363,
+ "graphite_2.67gcc_3000": 0.3383
+}

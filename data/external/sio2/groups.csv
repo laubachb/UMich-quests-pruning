@@ -1,0 +1,17 @@
+group,frames_total,frames_train,frames_test,atoms_train,atoms_test,elements
+Si-diamond,100,80,20,640,160,Si
+beta_cristobalite,100,80,20,1920,480,OSi
+beta_quartz,100,80,20,720,180,OSi
+beta_tridymite,100,80,20,960,240,OSi
+bulk_amo,313,250,63,48000,12096,OSi
+chabazite,200,160,40,17280,4320,OSi
+coesite,200,160,40,7680,1920,OSi
+liquid,313,250,63,48000,12096,OSi
+low_cristobalite,200,160,40,1920,480,OSi
+low_quartz,200,160,40,1440,360,OSi
+low_tridymite,200,160,40,23040,5760,OSi
+moganite,200,160,40,5760,1440,OSi
+quench,313,250,63,48000,12096,OSi
+stishovite,200,160,40,960,240,OSi
+tridymite_C2221,100,80,20,1920,480,OSi
+tridymite_P212121,100,80,20,5760,1440,OSi

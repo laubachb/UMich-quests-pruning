@@ -83,6 +83,7 @@ def main():
     ap.add_argument("out_dir")
     ap.add_argument("--test-frac", type=float, default=0.2)
     ap.add_argument("--min-group", type=int, default=20)
+    ap.add_argument("--drop", nargs="*", default=[], help="group labels to exclude (e.g. dimer)")
     args = ap.parse_args()
 
     frames = load_sio2(args.src) if args.dataset == "sio2" else load_monbtavw(args.src)
@@ -92,6 +93,9 @@ def main():
     train, test, rows = [], [], []
     for tag in sorted(by):
         fr = by[tag]
+        if tag in args.drop:
+            print(f"  drop {tag:32s} (--drop)")
+            continue
         if len(fr) < args.min_group:
             print(f"  drop {tag:32s} ({len(fr)} frames < {args.min_group})")
             continue

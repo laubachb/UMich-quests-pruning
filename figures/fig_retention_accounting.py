@@ -71,9 +71,17 @@ def main():
     # direct annotation of the striking value
     d = data["global"]
     d = d[(d.fraction.round(4) == round(args.fraction, 4)) & (d.group != "Full")].set_index("group")
+    # place the note to the right of the largest marker in that row
+    rowmax = {}
+    for k in SERIES:
+        dk = data[k]
+        dk = dk[(dk.fraction.round(4) == round(args.fraction, 4)) & (dk.group != "Full")].set_index("group")
+        sh = dk.n_env / dk.n_env.sum()
+        for g in ORDER:
+            rowmax[g] = max(rowmax.get(g, 0), float(sh.get(g, 0)))
     for g in ("diamond_3.68gcc_300", "graphite_2.39gcc_300"):
-        ax1.annotate(f"{int(d.loc[g, 'n_env'])} env.", (0.004, ORDER.index(g)),
-                     xytext=(4, 0), textcoords="offset points", va="center", fontsize=6.5,
+        ax1.annotate(f"global keeps {int(d.loc[g, 'n_env'])} env.", (rowmax[g], ORDER.index(g)),
+                     xytext=(6, 0), textcoords="offset points", va="center", fontsize=6.5,
                      color="#52514e")
 
     # (b) fraction of frames entering training vs retention

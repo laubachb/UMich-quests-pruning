@@ -90,7 +90,8 @@ retention, i.e. no pruning for liquids). Density rescaling conflates T and rho g
 
 **#2 How "Full" is built in Fig. 2.** DONE: Full = union of per-group budgets (paper: 31.2 %
 overall); dashed line = f_uniq elbow of the pooled curve. Pooled f_uniq(0.015) re-derived = 0.873
-(paper 0.884).
+(paper 0.884); MoNbTaVW 0.913, SiO2 0.880: the default bandwidth calls ~90 % of environments unique in
+all three chemistries. Pooled log-h elbows in `results/{funiq,ext/*/funiq}/global_s0/elbows_logh.csv`.
 
 **#3 Other subsampling strategies / random.** GPU: random_global and random_stratified at 5/10/20 %.
 

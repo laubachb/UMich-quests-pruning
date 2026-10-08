@@ -1,0 +1,22 @@
+{
+ "_provenance": "f_uniq at the log-h elbow (midpoint of inflection and lower max-curvature bend), pruning/elbow_logh.py",
+ "BCC_alloys": 0.3693,
+ "BCC_distorted": 0.2308,
+ "HEA_interstitial": 0.314,
+ "HEA_short_range": 0.1627,
+ "HEA_small": 0.3638,
+ "HEA_surface": 0.3525,
+ "HEA_vacancies": 0.2817,
+ "binary_BCC_alloys": 0.3893,
+ "divacancy": 0.5798,
+ "double_self_interstitial_defect": 0.5804,
+ "gamma_surface": 0.7211,
+ "liquid": 0.3325,
+ "ordered_alloys": 0.6022,
+ "phonon": 0.4919,
+ "self_intersitial_defect": 0.5039,
+ "short_range": 0.4821,
+ "suface_liquid": 0.3255,
+ "tri_vacancy": 0.6069,
+ "vacancy": 0.5606
+}

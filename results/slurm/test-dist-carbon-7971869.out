@@ -1,0 +1,2 @@
+/var/spool/slurmd/job7971869/slurm_script: line 4: 3706352 Killed                  python3 evaluation/test_train_distance.py --train /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz --test /p/lustre1/laubach2/nequip_models/becky_files/from_kyl-apr2026/random_C.xyz --fps-dir results/fps/stratified_s0 --out-dir results/test_distance
+[2026-10-08T12:30:01.705] error: Detected 1 oom_kill event in StepId=7971869.batch. Some of the step tasks have been OOM Killed.

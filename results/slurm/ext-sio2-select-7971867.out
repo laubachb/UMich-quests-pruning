@@ -1,0 +1,10 @@
+TBB Warning: The number of workers is currently limited to 1. The request for 111 workers is ignored. Further requests for more workers will be silently ignored until the limit changes.
+
+2350 frames, 214000 atoms (1s)
+descriptors (214000, 189) (16s)
+wrote data/external/sio2/train_desc.xyz (33s)
+TBB Warning: The number of workers is currently limited to 1. The request for 111 workers is ignored. Further requests for more workers will be silently ignored until the limit changes.
+
+589 frames, 53788 atoms (0s)
+descriptors (53788, 189) (4s)
+wrote data/external/sio2/test_desc.xyz (8s)

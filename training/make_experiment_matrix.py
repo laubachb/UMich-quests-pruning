@@ -39,7 +39,8 @@ def main():
     ap.add_argument("--species", nargs="*", default=None, help="chemical symbols for NequIP (external datasets)")
     ap.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
     ap.add_argument("--fractions", type=float, nargs="+", default=[0.05, 0.10, 0.20])
-    ap.add_argument("--budget", default=None, help="budget.json with per-group fractions for E4")
+    ap.add_argument("--budget", action="append", default=[], metavar="LABEL=PATH",
+                    help="per-group retention budget(s) for E4; repeatable, e.g. paper=results/funiq/paper/budget_paper_fig3.json")
     ap.add_argument("--matched-fraction", type=float, default=None,
                     help="E5: global_s0 and stratified_s0 at this single fraction (the overall retention of the "
                          "E4 budget), isolating per-group allocation from retention level")
@@ -77,14 +78,20 @@ def main():
                 rows.append(("E5_matched", sel, args.matched_fraction, s,
                              f"{pruned_root}/{sel}/{pruned_name(sel, f'{args.matched_fraction:.3f}')}",
                              f"{model_root}/E5_matched/{sel}/f{args.matched_fraction:.3f}/seed{s}"))
-    budget = args.budget and Path(args.budget).exists()
-    if budget:
+    budgets = []
+    for spec in args.budget:
+        label, path = spec.split("=", 1)
+        if Path(path).exists():
+            budgets.append((label, path))
+        else:
+            print(f"WARNING: budget {path} missing, skipping")
+    for label, path in budgets:
         for s in args.seeds:
-            rows.append(("E4_adaptive", "stratified_s0", -1, s,
-                         f"{pruned_root}/adaptive_s0/{pruned_name('stratified_s0', 'adaptive')}",
-                         f"{model_root}/E4_adaptive/seed{s}"))
-    else:
-        print("NOTE: E4_adaptive skipped (no --budget file yet)")
+            rows.append((f"E4_adaptive_{label}", "stratified_s0", -1, s,
+                         f"{pruned_root}/adaptive_{label}_s0/{pruned_name('stratified_s0', 'adaptive')}",
+                         f"{model_root}/E4_adaptive_{label}/seed{s}"))
+    if not budgets:
+        print("NOTE: E4_adaptive skipped (no --budget given)")
 
     with open(REPO / f"training/experiments{sfx}.csv", "w", newline="") as fh:
         w = csv.writer(fh)
@@ -98,9 +105,9 @@ def main():
             fl = " ".join(f"{f:.3f}" for f in sorted(fracs))
             fh.write(f"python pruning/make_masks.py $DATA {fps_root}/{sel} {pruned_root}/{sel} "
                      f"--fractions {fl} --drop-descriptors\n")
-        if budget:
-            fh.write(f"python pruning/make_masks.py $DATA {fps_root}/stratified_s0 {pruned_root}/adaptive_s0 "
-                     f"--budget {args.budget} --drop-descriptors\n")
+        for label, path in budgets:
+            fh.write(f"python pruning/make_masks.py $DATA {fps_root}/stratified_s0 {pruned_root}/adaptive_{label}_s0 "
+                     f"--budget {path} --drop-descriptors\n")
 
     with open(REPO / f"training/jobs{sfx}.txt", "w") as fh:
         for exp, sel, f, s, xyz, out in rows:

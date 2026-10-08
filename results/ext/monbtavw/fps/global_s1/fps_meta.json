@@ -1,0 +1,15 @@
+{
+  "xyz": "data/external/monbtavw/train_desc.xyz",
+  "mode": "global",
+  "fps_seed": 1,
+  "desc_key": "quests_descriptor_descriptors",
+  "n_env": 101486,
+  "scopes": {
+    "global": {
+      "n": 101486,
+      "start": 48022,
+      "file": "fps_order_global.npy",
+      "radius_file": "fps_radius_global.npy"
+    }
+  }
+}

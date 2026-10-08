@@ -8,4 +8,5 @@ python pruning/make_masks.py $DATA results/fps/random_global_s0 results/pruned/r
 python pruning/make_masks.py $DATA results/fps/random_stratified_s0 results/pruned/random_stratified_s0 --fractions 0.050 0.100 0.200 --drop-descriptors
 python pruning/make_masks.py $DATA results/fps/stratified_s0 results/pruned/stratified_s0 --fractions 0.050 0.100 0.200 0.312 --drop-descriptors
 python pruning/make_masks.py $DATA results/fps/stratified_s1 results/pruned/stratified_s1 --fractions 0.050 0.100 0.200 --drop-descriptors
-python pruning/make_masks.py $DATA results/fps/stratified_s0 results/pruned/adaptive_s0 --budget results/funiq/paper/budget_paper_fig3.json --drop-descriptors
+python pruning/make_masks.py $DATA results/fps/stratified_s0 results/pruned/adaptive_paper_s0 --budget results/funiq/paper/budget_paper_fig3.json --drop-descriptors
+python pruning/make_masks.py $DATA results/fps/stratified_s0 results/pruned/adaptive_midlo_s0 --budget results/funiq/groups_s0/budget_mid_lo.json --drop-descriptors

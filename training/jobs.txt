@@ -61,6 +61,9 @@ training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0
 training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.312_stratified_s0.xyz 0 results/models/E5_matched/stratified_s0/f0.312/seed0 gpu
 training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.312_stratified_s0.xyz 1 results/models/E5_matched/stratified_s0/f0.312/seed1 gpu
 training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.312_stratified_s0.xyz 2 results/models/E5_matched/stratified_s0/f0.312/seed2 gpu
-training/train_one.sh results/pruned/adaptive_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 0 results/models/E4_adaptive/seed0 gpu
-training/train_one.sh results/pruned/adaptive_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 1 results/models/E4_adaptive/seed1 gpu
-training/train_one.sh results/pruned/adaptive_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 2 results/models/E4_adaptive/seed2 gpu
+training/train_one.sh results/pruned/adaptive_paper_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 0 results/models/E4_adaptive_paper/seed0 gpu
+training/train_one.sh results/pruned/adaptive_paper_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 1 results/models/E4_adaptive_paper/seed1 gpu
+training/train_one.sh results/pruned/adaptive_paper_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 2 results/models/E4_adaptive_paper/seed2 gpu
+training/train_one.sh results/pruned/adaptive_midlo_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 0 results/models/E4_adaptive_midlo/seed0 gpu
+training/train_one.sh results/pruned/adaptive_midlo_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 1 results/models/E4_adaptive_midlo/seed1 gpu
+training/train_one.sh results/pruned/adaptive_midlo_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 2 results/models/E4_adaptive_midlo/seed2 gpu

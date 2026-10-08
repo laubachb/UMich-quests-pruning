@@ -7,6 +7,7 @@
 *.tar.gz
 *.zip
 *.npy
+results/timing_cpu/
 env/venv*/
 __pycache__/
 *.pyc

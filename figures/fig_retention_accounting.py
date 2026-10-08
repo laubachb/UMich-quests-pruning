@@ -38,6 +38,8 @@ ORDER = [
 
 
 def pretty(g):
+    if "gcc" not in g:
+        return g.replace("_", " ")
     g = g.replace("_0.0gcc_CC", " cold curve").replace("gcc_", " g/cc, ").replace("_", " ")
     return g + (" K" if g[-1].isdigit() else "")
 
@@ -47,10 +49,19 @@ def main():
     ap.add_argument("--stats-dir", default="results/stats_train")
     ap.add_argument("--fraction", type=float, default=0.05)
     ap.add_argument("--out", default="figures/out/retention_accounting")
+    ap.add_argument("--order", default="carbon", help="'carbon' (fixed state-point order) or 'by-size'")
+    ap.add_argument("--annotate", nargs="*", default=["diamond_3.68gcc_300", "graphite_2.39gcc_300"],
+                    help="groups to annotate with the global-FPS environment count")
     args = ap.parse_args()
 
     data = {k: pd.read_csv(f"{args.stats_dir}/retention_accounting_{k}_s0.csv") for k in SERIES}
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.0, 3.4), gridspec_kw={"width_ratios": [1.25, 1]})
+    global ORDER
+    if args.order != "carbon":
+        d0 = data["stratified"]
+        d0 = d0[(d0.fraction.round(4) == round(args.fraction, 4)) & (d0.group != "Full")]
+        ORDER = list(d0.sort_values("n_env", ascending=False).group)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7.0, 3.4 + 0.12 * max(0, len(ORDER) - 14)),
+                                   gridspec_kw={"width_ratios": [1.25, 1]})
 
     # (a) budget share per group at the chosen retention
     y = range(len(ORDER))
@@ -79,7 +90,9 @@ def main():
         sh = dk.n_env / dk.n_env.sum()
         for g in ORDER:
             rowmax[g] = max(rowmax.get(g, 0), float(sh.get(g, 0)))
-    for g in ("diamond_3.68gcc_300", "graphite_2.39gcc_300"):
+    for g in args.annotate:
+        if g not in ORDER:
+            continue
         ax1.annotate(f"global keeps {int(d.loc[g, 'n_env'])} env.", (rowmax[g], ORDER.index(g)),
                      xytext=(6, 0), textcoords="offset points", va="center", fontsize=6.5,
                      color="#52514e")

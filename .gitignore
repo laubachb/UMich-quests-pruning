@@ -15,3 +15,4 @@ slurm_output/
 *.egg-info/
 results/fps/*/*.npy
 results/timing_cpu/
+results/pruned/

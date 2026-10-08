@@ -1,0 +1,13 @@
+{
+  "xyz": "data/external/monbtavw/train_desc.xyz",
+  "mode": "random_global",
+  "fps_seed": 0,
+  "n_env": 101486,
+  "scopes": {
+    "global": {
+      "n": 101486,
+      "start": 56486,
+      "file": "fps_order_global.npy"
+    }
+  }
+}

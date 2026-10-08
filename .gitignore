@@ -23,3 +23,6 @@ results/test_distance/nn_distances.csv
 results/test_distance/test_descriptors.npy
 results/test_distance/nn_distances.csv
 *.core
+!results/ext/*/fps/**/*.npy
+results/ext/*/test_distance/*.npy
+results/ext/*/test_distance/nn_distances.csv

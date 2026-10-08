@@ -70,6 +70,10 @@ def main():
     gte = np.concatenate([np.full(len(a), a.info["config_tag"]) for a in test])
     if cache.exists():
         Xte = np.load(cache)
+    elif all(args.desc_key in a.arrays for a in test):  # descriptors already stored (e.g. multicomponent)
+        Xte = np.concatenate([a.arrays[args.desc_key] for a in test]).astype(np.float64)
+        np.save(cache, Xte)
+        print(f"test descriptors read from file: {Xte.shape}")
     else:
         t1 = time.time()
         Xte = get_descriptors(test, k=args.k, cutoff=args.cutoff).astype(np.float64)
@@ -100,7 +104,7 @@ def main():
 
     def canon(t):
         t = t.replace("test_", "").replace("HD_liquid", "HD liquid").replace("LD_liquid", "LD liquid")
-        return "LD liquid_1.0gcc_2000" if t == "LD liquid_0.5gcc_2000" else t
+        return "LD liquid_1.0gcc_2000" if t == "LD liquid_0.5gcc_2000" else t  # carbon test-tag quirks
 
     rows = []
     print(f"\n{'test group':28s} {'n':>6} {'test->train':>22} {'train->train LOO':>22} {'ratio':>6} {'same-grp':>8} {'->5% subset':>12}")

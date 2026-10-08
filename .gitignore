@@ -1,0 +1,15 @@
+# large data
+*.xyz
+*.pth
+*.ckpt
+*.lammpstrj*
+*.tar
+*.tar.gz
+*.zip
+*.npy
+env/venv/
+__pycache__/
+*.pyc
+outputs/
+slurm_output/
+*.egg-info/

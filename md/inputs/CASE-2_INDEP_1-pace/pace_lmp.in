@@ -1,0 +1,38 @@
+#### Settings required by ChIMES pairstyle ####
+
+atom_style              atomic 
+units                   metal
+boundary                p p p 
+atom_modify             sort 0 0.0 
+
+#### Neighbor list setup ####
+
+neighbor        1.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+read_data       data.in
+
+velocity all create 1000 1111 mom yes rot yes dist gaussian mom yes
+
+
+#### Evaluate interactions with PACE+D2 ####
+
+pair_style              hybrid/overlay pace table linear 10000
+pair_coeff              * * pace /p/lustre2/rlindsey/ChIMES_Carbon-210317/generate_models-DFTBref/al_2+3+4b-O20_10_4-postMioPBE/ALC-2/try_pace/anc_files/potential_file/c_ace.yace C 
+pair_coeff              * * table /p/lustre2/rlindsey/ChIMES_Carbon-210317/generate_models-DFTBref/al_2+3+4b-O20_10_4-postMioPBE/ALC-2/try_pace/anc_files/potential_file/d2.table D2 9.0
+
+
+#### Specify dynamics and i/o ####
+
+timestep                0.001
+fix                     1 all nvt temp 1000 1000 0.05 
+
+dump		dump_1 all custom 1 traj.lammpstrj id type element xu yu zu
+dump_modify	dump_1 sort id element C		
+
+
+thermo_style    custom step time ke pe temp press vol econserve
+thermo_modify   line one format float %20.5f flush yes
+thermo          1
+
+run 6000

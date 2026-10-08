@@ -1,0 +1,63 @@
+Reviewer(s)' Comments to Author:
+Reviewer: 1
+
+Comments:
+The manuscript presents a framework that may be valuable for entropy-guided, group-stratified pruning of MLIP training datasets. However, the effects of adaptive bandwidth selection and group stratification using FPS are not sufficiently distinguished. It is recommended that the authors clarify the respective contributions of stratification, FPS, and adaptive bandwidth.
+Several additional issues require attention:
+1. The term 'retained fraction' requires clarification, as selection occurs at the atomic environment level and is subsequently followed by reconstruction of the full simulation frames. The manuscript should include figures detailing the number of environments selected, unique configurations, atoms, and force labels used for training.
+2. Because the test set is derived from the same DFT-MD trajectories as the training data, substantial temporal or structural correlation may occur, potentially leading to optimistic estimates of generalization. It is therefore recommended to use a test set that is trajectory-disjoint or otherwise independent.
+3. Application of the elbow criterion requires a complete mathematical or numerical specification, including the bandwidth grid, smoothing method, curvature calculation, and procedures for handling ambiguous or poorly defined elbows.
+4. The statistical analysis should be expanded to report the number of independent runs and the values of the random seeds. Additionally, an indication of the uncertainty associated with the quantitative improvements discussed in the text should be provided.
+
+
+Reviewer: 2
+
+Comments:
+The manuscript addresses an important practical problem in the MLIP community, and the results provide suggestive evidence that stratified FPS can outperform global FPS for aggressive dataset pruning. However, I have concerns about the interpretation and validation of the adaptive-bandwidth component that should be addressed before I can recommend publication.
+
+1. The manuscript interprets the elbow of f_uniq as identifying a characteristic scale separating redundant from distinct environments. However, an elbow should arise even for approximately uniform distribution of points in descriptor space. In such a case, the elbow reflects finite sampling density rather than intrinsic redundancy. The authors should establish the robustness of the elbow to changes in sampling density/subsampling and more carefully delimit when it can be interpreted as a meaningful structural scale.
+
+2. As described, bandwidth does not appear to enter the FPS itself. At a prescribed retention fraction, Stratified-Fixed and Stratified-Adaptive therefore appear to select the same environments; the improvements reported against Global-Fixed primarily demonstrate the benefit of stratification, not adaptive bandwidth selection. The apparent role of the elbow is instead to prescribe a different retention fraction for each group. However, I believe that the validation models are trained by sweeping a common retention fraction across all groups, rather than by simultaneously applying the group-specific elbow-derived fractions. If I am correct, the observed coincidence between individual elbow markers and error growth along the common-retention curves is suggestive but indirect. The authors should directly validate the model produced by their actual adaptive retention prescription.
+
+3. As I understand the paper, the actual selection is performed by FPS using distances in descriptor space, while QUESTS/KDE is used only to infer a retention threshold. This raises the question of why two different formalisms are needed in the first place. FPS itself naturally generates a sequence of covering scales that directly measures the additional descriptor-space resolution gained by retaining another environment. An analogous stopping criterion could therefore be defined directly from the decay of this characteristic distance with retained set size, without introducing a KDE, bandwidth, or entropy measure. The manuscript should explain what additional benefit QUEST provides beyond the geometry already used by FPS.
+
+Overall, I think the paper currently establishes the usefulness of group-stratified FPS more strongly than it establishes the usefulness of adaptive entropy-based bandwidth selection. Clearly separating these two contributions and directly validating the latter would considerably strengthen the manuscript.
+
+Minor point:
+The description of methods used to generate training sets is incomplete. Several methods were introduced to minimize redundancy by construction. These should be acknowledged.
+
+
+
+
+Reviewer: 3
+
+Comments:
+The authors focus on improving QUESTS, an information-theoretic pruning method that requires a length-scale/band-width parameter to determine when atomic environments are considered redundant. The authors find that the best bandwidth differs between structurally distinct phases, making a single global value problematic for heterogeneous datasets. They propose a group-aware adaptive pruning approach: (1) divide the dataset into thermodynamic/structural groups, (2) automatically determine the optimal bandwidth for each group using an elbow criterion based on QUESTS entropy, and (3) use farthest-point sampling (FPS) within each group to retain the most diverse atomic environments. Using carbon datasets containing diamond, graphite, and liquid carbon, they show that global pruning can disproportionately retain one phase while under-sampling others. Their suggested method improves model performance substantially when training on only 5% of the original data.
+
+I have concerns related to the originality of the work. I think the manuscript is convoluted. Significant length reduction is possible without losing information. Also, not much new results are presented. I cannot recommend this work for publication in JCIM in the current form, but I am willing to reconsider my viewpoint upon adequate responses.
+
+
+1. My main concern is the originality. I have thought so far based on simple chemical intuition that the correct choice for choosing data from heterogeneous datasets is that we pick data from all fundamentally different chemical systems and then minimize data redundancy within the systems using for example FPS. This is because you want to make sure that all types of chemical systems are represented. Now the authors argue that they figured this out as a new fundamental method and named it. I argue that the suggested method is just basic logic that naturally pops up for problems with multiple elements and chemically heterogeneous systems that are most of the chemistry-related problems.
+
+2. The authors use carbon as a single element test system given their background which is understandable. If the authors think they truly figured out a new method worth publishing then they should report it using problems with more elemental complexity that shows the general value of the proposed method.
+
+3. Abstract 350+ words while there is very little value in it. Similarly, the manuscript is mostly background information. The actual results are just three pages. I recommend streamlining the manuscript by removing unnecessary information and including results if there are any.
+
+
+
+Reviewer: 4
+
+Comments:
+The work "Entropy-Guided Dataset Reduction for Machine-Learned Interatomic Potentials" proposes a bandwidth selection method that can be used to subsample datasets using an information theoretical strategy. In particular, the manuscript focuses on the descriptors and methods from QUESTS, which provides measures of information entropy on datasets of atomistic configurations. This work argues that an adaptive bandwidth selection method is able to perform well in subsampling a carbon dataset, as measured by force MAEs.
+
+The work is clear and well-explained. However, I have concerns regarding the general applicability of the method. In a sense, a bandwidth defines the metric space for pairwise distances, and thus allows estimating densities in that region of the space. On the other hand, the solution provided here selects a single bandwidth per hand-selected dataset. It is unclear whether this is truly an advancement for a publication on this journal.
+
+As feedback for the authors, here are some of my main concerns:
+
+1) If density artifacts were the main concern of the authors, they could have rescaled the density of each structure and downselect the dataset with the rescaled density. If this works, then the innovation of the paper is somewhat undermined by a simple result. Bandwidth selection is a very well-studied problem and can hardly be called an innovation at this point. As another example, perhaps a larger bandwidth (i.e., higher than the one with highest curvature) could work even better, but this hypothesis is not even tested. Or perhaps a bandwidth that fixes f_uniq to a set value (e.g., 0.3) could solve the problem as well. Given that this is arbitrary, there is no evidence that the authors' method is unique, optimal, or even general.
+2) It is unclear how this adaptive method is used when structures with different densities are mixed. Was the "full" dataset  (red line) in Fig. 2 probably was constructed by adopting the adaptive bandwidth on the entire dataset or separate subsets? In a real-world example, would one have to partition the dataset in classes prior to adopting a bandwidth? This partitioning scheme may end up being as complicated as the dataset subsampling itself, showcasing that the problem would only be useful when labels are known and well-demonstrated.
+3) The adopted examples are very limited. The lack of other subsampling strategies (e.g., point 1 above or algorithms from Refs. 35, 38, 40, 42) prevents us from even knowing if a random sampling method would have outperformed the results, or if this work really represents an advancement in subsampling strategies. Furthermore, as far as I understand, FPS does not need a bandwidth - it suffices to use the distance between descriptors. Why care about a bandwidth, then?
+4) The fact that this is a single-component, single-dataset example limits the power of the conclusions. Very limited insight can be resolved from this limited scope. The single MLIP also fixes this problem on NeqUIP, which is decoupled from the ChIMES model from the authors, but still a single model. The results are also somewhat weak:
+5) Figure 2 introduces several conflicting problems. First, the train force error for training curves for Full, Graphite, LD liquid, and perhaps HD Liquid is higher than the test errors. Second, why would the train error change exactly like the test error? The spikes at exactly the dataset size ~40% in Full showcase some systematic error. Second, the y scales are somewhat deceiving. Second, results seem incomplete: the cluster method was performed with large number of points, but the global metrics were performed more sparsely (see Diamond Train, Graphite train, HD liquid). This reflects that the results are not even evaluated at comparable dataset sizes. There is also no mention on whether this is simply a bias from the test set, which seems to be randomly sampled.
+5) Figure 3 does not show any meaningful result, as f_uniq was designed to be higher with the adaptive bandwidth. It does not represent any substantial evidence on their work, but rather just shows the obvious result from a KDE being broader with a higher bandwidth.
+6) Similarly, Figure 4 just proves that maybe the stratified approach does not matter at all. Even with a very small dataset, it seems that the RDF error is incredibly low. This is a second example that the figures of merit themselves seem to have low signal-to-noise ratio, preventing a reader from understanding whether there is a clear utility in this strategy.

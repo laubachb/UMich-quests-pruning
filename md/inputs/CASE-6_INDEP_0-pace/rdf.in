@@ -1,0 +1,79 @@
+! TRAVIS input file
+! Created with TRAVIS version compiled at Apr 20 2017 12:04:25
+! Input file written at Thu May 27 15:29:55 2021.
+! Use the advanced mode until the analysis selection menu (y/n)? [no] 
+y
+! Use periodic boundary conditions (0=no, x, y, z, xy, xz, xyz)? [xyz]
+
+! Use time-dependent cell vector (NPT ensemble) (y/n)? [no] 
+
+! Is the simulation cell non-orthorhombic (cell angles other than 90 deg) (y/n)? [no] 
+
+! Are the 3 cell vectors of the same size (yes/no)? [yes] 
+
+! Enter length of cell vector in pm: 
+1504.269
+! Should the periodic box be multiplied (y/n)? [no] 
+
+! Execute molecule recognition for which time step (-1 = disable)? [0] 
+-1
+! Show bond matrices only for first representant of each molecule type (y/n)? [yes] 
+
+! Show only bonds in the bond matrices (y/n)? [yes] 
+
+! Accept these molecules (y) or change something (n)? [yes] 
+
+! Create images of the structural formulas (y/n)? [no] 
+
+! Change the atom ordering in some molecule (y/n)? [no] 
+
+! Define additional virtual atoms (y/n)? [no] 
+
+! Do you want to define pseudo-molecules (y/n)? [no] 
+
+! Which functions to compute (comma separated)?
+rdf
+! Use the advanced mode for the main part (y/n)? [no] 
+
+! Perform this observation intramolecular (within the reference molecule) (0) or intermolecular (1)? [1] 
+
+! Take reference atom(s) from RM C (0) or from OM C (1)? [0] 
+
+! Take observed atom(s) from RM C (0) or from OM C (1)? [1] 
+
+! Which atom(s) to take from RM C (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Which atom(s) to take from OM C (e.g. "C1,C3-5,H", "*"=all)? [#2]
+*
+! Enter the minimal radius of this RDF in pm: [0] 
+
+! Enter the maximal radius of this RDF in pm: [700.0] 
+
+! Enter the resolution (bin count) for this RDF: [300] 
+
+! Correct radial distribution for this RDF (y/n)? [yes] 
+
+! How many different block lenghts to use? [100] 
+
+! Enter minimal block length in time steps: [1] 
+
+! Enter maximal block length in time steps: [509] 
+
+! Write out correlation length extrapolation fit data for each bin (y/n)? [no] 
+
+! Use which factor of sigma for confidence range? [3.0] 
+
+! Save temporal development for this observation (y/n)? [no] 
+
+! Add a condition to this observation (y/n)? [no] 
+
+! Add another observation (y/n)? [no] 
+
+! Skip repeated time steps (y/n)? [no] 
+
+! In which time step to start processing the trajectory? [1] 
+
+! How many time steps to use (from this position on)? [all] 
+
+! Use every n-th time step from the trajectory? [1] 
+

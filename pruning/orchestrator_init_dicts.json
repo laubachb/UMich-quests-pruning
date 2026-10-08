@@ -1,0 +1,45 @@
+{
+    "augmentor":{
+        "augmentor_type": "BASE",
+        "augmentor_args": {}
+    },
+    "descriptor":{
+        "descriptor_type": "QUESTSDescriptor",
+        "descriptor_args": {
+            "num_nearest_neighbors": 32,
+            "cutoff": 5.0
+        }
+    },
+    "storage":{
+        "storage_type":"COLABFIT",
+        "storage_args":{
+            "credential_file":"/usr/gapps/iap/kim-storage/iap-storage/test_colabfit_credentials.json"
+        }
+    },
+    "workflow":{
+        "workflow_type": "ASYNCHSLURM",
+        "workflow_args":{
+            "root_directory":"./slurm_output",
+            "queue":"pbatch",
+            "account": "iap", 
+            "walltime": 15,
+            "wait_freq":180
+        }
+    },
+    "runtime_args":{
+        "starting_dataset":"DS_jorzx5j10v4l_0",
+        "descriptor_dataset": "DS_2km6t3p8hxx2_0",
+        "descriptor_compute_args":{},
+        "descriptor_job_details":{
+            "walltime": 10,
+            "queue": "pdebug",
+	    "extra_args":{
+	        "extra_header": "#SBATCH --exclusive"
+	    }
+        },
+        "descriptor_batch_size":5000,
+        "training_job_details":{
+            "walltime":80
+        }
+    }
+}

@@ -109,9 +109,27 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     rng = np.random.default_rng(args.seed)
     curves, elbows = [], []
+    cpath, epath = out / "funiq_curves.csv", out / "elbows.csv"
+    done = set()
+    if cpath.exists():  # resume: skip scopes already written
+        with open(cpath) as fh:
+            done = {r[0] for r in csv.reader(fh) if r and r[0] != "scope"}
+        print(f"resuming; {len(done)} scopes already done", flush=True)
+    else:
+        with open(cpath, "w", newline="") as fh:
+            csv.writer(fh).writerow(["scope", "subsample", "rep", "n", "h", "H", "f_uniq"])
+        with open(epath, "w", newline="") as fh:
+            csv.writer(fh).writerow(["scope", "subsample", "rep", "n", "h_kneedle", "f_kneedle", "h_curv", "f_curv"])
 
     for scope in scopes:
         idx = np.arange(len(X)) if scope == "global" else np.flatnonzero(env_group == scope)
+        # the rng draw below must happen even when skipping, to keep subsamples reproducible
+        if scope in done:
+            for frac in args.subsample:
+                for rep in range(args.n_rep):
+                    rng.choice(idx, size=max(10, int(round(frac * len(idx)))), replace=False)
+            continue
+        curves, elbows = [], []
         jobs = [(1.0, 0, idx)]
         for frac in args.subsample:
             for rep in range(args.n_rep):
@@ -129,16 +147,11 @@ def main():
                   f"h*_curv={h_grid[ic]:.4f} (f={f[ic]:.3f})  "
                   f"f(0.015)={np.interp(np.log10(0.015), logh, f):.3f}  "
                   f"({time.time() - t1:.1f}s)", flush=True)
+        with open(cpath, "a", newline="") as fh:
+            csv.writer(fh).writerows(curves)
+        with open(epath, "a", newline="") as fh:
+            csv.writer(fh).writerows(elbows)
 
-    with open(out / "funiq_curves.csv", "w", newline="") as fh:
-        w = csv.writer(fh)
-        w.writerow(["scope", "subsample", "rep", "n", "h", "H", "f_uniq"])
-        w.writerows(curves)
-    with open(out / "elbows.csv", "w", newline="") as fh:
-        w = csv.writer(fh)
-        w.writerow(["scope", "subsample", "rep", "n", "h_kneedle", "funiq_kneedle",
-                    "h_curv", "funiq_curv"])
-        w.writerows(elbows)
     json.dump({"xyz": args.xyz, "scopes": scopes, "h_grid": h_grid.tolist(),
                "subsample": args.subsample, "n_rep": args.n_rep, "seed": args.seed,
                "desc_key": args.desc_key, "elapsed_s": time.time() - t0},

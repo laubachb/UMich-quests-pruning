@@ -8,6 +8,6 @@ set -euo pipefail
 NAME=$1; shift
 REPO=$(cd "$(dirname "$0")/.." && pwd)
 mkdir -p "$REPO/results/slurm"
-sbatch --parsable -J "$NAME" -p "${PARTITION:-pdebug}" -N 1 -t "${TIME:-01:00:00}" \
+sbatch --parsable -J "$NAME" -p "${PARTITION:-pdebug}" -N 1 --exclusive -c 112 --mem=0 -t "${TIME:-01:00:00}" \
     -o "$REPO/results/slurm/$NAME-%j.out" \
     --wrap "cd $REPO && export OMP_NUM_THREADS=112 NUMBA_NUM_THREADS=112 && $*"

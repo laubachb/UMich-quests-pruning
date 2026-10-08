@@ -60,13 +60,18 @@ def main():
     ap.add_argument("curves_csv")
     ap.add_argument("--out", required=True)
     ap.add_argument("--f-target", type=float, default=0.3)
+    ap.add_argument("--h-max", type=float, default=None,
+                    help="restrict the knee/curvature search to h <= h_max (the chord knee is range-dependent; "
+                         "h_max=0.05 reproduces the paper's crystalline h* values, see elbow_calibrate.py)")
     args = ap.parse_args()
 
     df = pd.read_csv(args.curves_csv)
     rows = []
     for (scope, sub, rep), g in df.groupby(["scope", "subsample", "rep"]):
         g = g.sort_values("h")
-        h, f = g["h"].to_numpy(), g["f_uniq"].to_numpy()
+        h_all, f_all = g["h"].to_numpy(), g["f_uniq"].to_numpy()
+        m = np.ones(len(h_all), bool) if args.h_max is None else (h_all <= args.h_max)
+        h, f = h_all[m], f_all[m]
         i_lin, i_log = knee(h, f), knee(np.log10(h), f)
         h_curv = max_curvature(h, f)
         below = np.flatnonzero(f <= args.f_target)
@@ -75,8 +80,8 @@ def main():
                      "h_lin_knee": h[i_lin], "f_lin_knee": f[i_lin],
                      "h_log_knee": h[i_log], "f_log_knee": f[i_log],
                      "h_lin_curv": h_curv, "f_lin_curv": float(np.interp(h_curv, h, f)),
-                     "h_ftarget": h_t, "f_at_0.015": float(np.interp(0.015, h, f)),
-                     "f_at_hmax": f[-1]})
+                     "h_ftarget": h_t, "f_at_0.015": float(np.interp(0.015, h_all, f_all)),
+                     "f_at_hmax": f_all[-1], "h_max_search": args.h_max or h_all[-1]})
     out = pd.DataFrame(rows)
     out.to_csv(args.out, index=False)
 

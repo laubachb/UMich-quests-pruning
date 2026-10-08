@@ -7,7 +7,7 @@
 *.tar.gz
 *.zip
 *.npy
-env/venv/
+env/venv*/
 __pycache__/
 *.pyc
 outputs/

@@ -1,0 +1,19 @@
+{
+ "_provenance": "f_uniq at the log-h elbow (midpoint of inflection and lower max-curvature bend), pruning/elbow_logh.py",
+ "Si-diamond": 0.266,
+ "beta_cristobalite": 0.3791,
+ "beta_quartz": 0.3702,
+ "beta_tridymite": 0.3701,
+ "bulk_amo": 0.4617,
+ "chabazite": 0.4005,
+ "coesite": 0.3727,
+ "liquid": 0.4183,
+ "low_cristobalite": 0.3746,
+ "low_quartz": 0.387,
+ "low_tridymite": 0.4147,
+ "moganite": 0.4081,
+ "quench": 0.443,
+ "stishovite": 0.3852,
+ "tridymite_C2221": 0.4815,
+ "tridymite_P212121": 0.4036
+}

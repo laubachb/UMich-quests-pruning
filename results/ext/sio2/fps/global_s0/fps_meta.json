@@ -1,0 +1,15 @@
+{
+  "xyz": "data/external/sio2/train_desc.xyz",
+  "mode": "global",
+  "fps_seed": 0,
+  "desc_key": "quests_descriptor_descriptors",
+  "n_env": 214000,
+  "scopes": {
+    "global": {
+      "n": 214000,
+      "start": 182033,
+      "file": "fps_order_global.npy",
+      "radius_file": "fps_radius_global.npy"
+    }
+  }
+}

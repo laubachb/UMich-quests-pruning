@@ -1,0 +1,105 @@
+{
+  "xyz": "data/external/sio2/train_desc.xyz",
+  "mode": "stratified",
+  "fps_seed": 1,
+  "desc_key": "quests_descriptor_descriptors",
+  "n_env": 214000,
+  "scopes": {
+    "Si-diamond": {
+      "n": 640,
+      "start": 302,
+      "file": "fps_order_Si-diamond.npy",
+      "radius_file": "fps_radius_Si-diamond.npy"
+    },
+    "beta_cristobalite": {
+      "n": 1920,
+      "start": 1622,
+      "file": "fps_order_beta_cristobalite.npy",
+      "radius_file": "fps_radius_beta_cristobalite.npy"
+    },
+    "beta_quartz": {
+      "n": 720,
+      "start": 3103,
+      "file": "fps_order_beta_quartz.npy",
+      "radius_file": "fps_radius_beta_quartz.npy"
+    },
+    "beta_tridymite": {
+      "n": 960,
+      "start": 4192,
+      "file": "fps_order_beta_tridymite.npy",
+      "radius_file": "fps_radius_beta_tridymite.npy"
+    },
+    "bulk_amo": {
+      "n": 48000,
+      "start": 5912,
+      "file": "fps_order_bulk_amo.npy",
+      "radius_file": "fps_radius_bulk_amo.npy"
+    },
+    "chabazite": {
+      "n": 17280,
+      "start": 54731,
+      "file": "fps_order_chabazite.npy",
+      "radius_file": "fps_radius_chabazite.npy"
+    },
+    "coesite": {
+      "n": 7680,
+      "start": 75840,
+      "file": "fps_order_coesite.npy",
+      "radius_file": "fps_radius_coesite.npy"
+    },
+    "liquid": {
+      "n": 48000,
+      "start": 122735,
+      "file": "fps_order_liquid.npy",
+      "radius_file": "fps_radius_liquid.npy"
+    },
+    "low_cristobalite": {
+      "n": 1920,
+      "start": 125678,
+      "file": "fps_order_low_cristobalite.npy",
+      "radius_file": "fps_radius_low_cristobalite.npy"
+    },
+    "low_quartz": {
+      "n": 1440,
+      "start": 127569,
+      "file": "fps_order_low_quartz.npy",
+      "radius_file": "fps_radius_low_quartz.npy"
+    },
+    "low_tridymite": {
+      "n": 23040,
+      "start": 148582,
+      "file": "fps_order_low_tridymite.npy",
+      "radius_file": "fps_radius_low_tridymite.npy"
+    },
+    "moganite": {
+      "n": 5760,
+      "start": 154038,
+      "file": "fps_order_moganite.npy",
+      "radius_file": "fps_radius_moganite.npy"
+    },
+    "quench": {
+      "n": 48000,
+      "start": 170472,
+      "file": "fps_order_quench.npy",
+      "radius_file": "fps_radius_quench.npy"
+    },
+    "stishovite": {
+      "n": 960,
+      "start": 206154,
+      "file": "fps_order_stishovite.npy",
+      "radius_file": "fps_radius_stishovite.npy"
+    },
+    "tridymite_C2221": {
+      "n": 1920,
+      "start": 206813,
+      "file": "fps_order_tridymite_C2221.npy",
+      "radius_file": "fps_radius_tridymite_C2221.npy"
+    },
+    "tridymite_P212121": {
+      "n": 5760,
+      "start": 210596,
+      "file": "fps_order_tridymite_P212121.npy",
+      "radius_file": "fps_radius_tridymite_P212121.npy"
+    }
+  }
+}

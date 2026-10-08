@@ -36,3 +36,130 @@ resuming; 4 scopes already done
   liquid                       sub=0.25 rep=2 n= 12000 h*_kneedle=0.0232 (f=0.971)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.999  (10.4s)
   liquid                       sub=0.50 rep=0 n= 24000 h*_kneedle=0.0232 (f=0.957)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.998  (21.8s)
   liquid                       sub=0.50 rep=1 n= 24000 h*_kneedle=0.0232 (f=0.957)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.998  (22.8s)
+  liquid                       sub=0.50 rep=2 n= 24000 h*_kneedle=0.0232 (f=0.958)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.997  (22.5s)
+  liquid                       sub=0.75 rep=0 n= 36000 h*_kneedle=0.0232 (f=0.949)  h*_curv=0.0183 (f=0.987)  f(0.015)=0.997  (38.2s)
+  liquid                       sub=0.75 rep=1 n= 36000 h*_kneedle=0.0232 (f=0.948)  h*_curv=0.0183 (f=0.987)  f(0.015)=0.997  (36.9s)
+  liquid                       sub=0.75 rep=2 n= 36000 h*_kneedle=0.0232 (f=0.949)  h*_curv=0.0183 (f=0.987)  f(0.015)=0.997  (38.4s)
+  low_cristobalite             sub=1.00 rep=0 n=  1920 h*_kneedle=0.0530 (f=0.233)  h*_curv=0.0056 (f=0.964)  f(0.015)=0.687  (1.1s)
+  low_cristobalite             sub=0.25 rep=0 n=   480 h*_kneedle=0.0672 (f=0.233)  h*_curv=0.0080 (f=0.962)  f(0.015)=0.794  (0.1s)
+  low_cristobalite             sub=0.25 rep=1 n=   480 h*_kneedle=0.0672 (f=0.234)  h*_curv=0.0071 (f=0.968)  f(0.015)=0.793  (0.1s)
+  low_cristobalite             sub=0.25 rep=2 n=   480 h*_kneedle=0.0672 (f=0.227)  h*_curv=0.0050 (f=0.990)  f(0.015)=0.784  (0.1s)
+  low_cristobalite             sub=0.50 rep=0 n=   960 h*_kneedle=0.0597 (f=0.230)  h*_curv=0.0063 (f=0.966)  f(0.015)=0.735  (0.3s)
+  low_cristobalite             sub=0.50 rep=1 n=   960 h*_kneedle=0.0597 (f=0.228)  h*_curv=0.0063 (f=0.969)  f(0.015)=0.739  (0.3s)
+  low_cristobalite             sub=0.50 rep=2 n=   960 h*_kneedle=0.0597 (f=0.230)  h*_curv=0.0063 (f=0.966)  f(0.015)=0.737  (0.3s)
+  low_cristobalite             sub=0.75 rep=0 n=  1440 h*_kneedle=0.0530 (f=0.242)  h*_curv=0.0063 (f=0.960)  f(0.015)=0.709  (0.7s)
+  low_cristobalite             sub=0.75 rep=1 n=  1440 h*_kneedle=0.0530 (f=0.242)  h*_curv=0.0063 (f=0.959)  f(0.015)=0.707  (0.7s)
+  low_cristobalite             sub=0.75 rep=2 n=  1440 h*_kneedle=0.0530 (f=0.244)  h*_curv=0.0063 (f=0.958)  f(0.015)=0.708  (0.7s)
+  low_quartz                   sub=1.00 rep=0 n=  1440 h*_kneedle=0.0756 (f=0.223)  h*_curv=0.0056 (f=0.982)  f(0.015)=0.839  (0.6s)
+  low_quartz                   sub=0.25 rep=0 n=   360 h*_kneedle=0.0851 (f=0.245)  h*_curv=0.0050 (f=0.997)  f(0.015)=0.915  (0.0s)
+  low_quartz                   sub=0.25 rep=1 n=   360 h*_kneedle=0.0957 (f=0.227)  h*_curv=0.0050 (f=0.996)  f(0.015)=0.913  (0.0s)
+  low_quartz                   sub=0.25 rep=2 n=   360 h*_kneedle=0.0851 (f=0.250)  h*_curv=0.0050 (f=0.996)  f(0.015)=0.922  (0.0s)
+  low_quartz                   sub=0.50 rep=0 n=   720 h*_kneedle=0.0851 (f=0.221)  h*_curv=0.0102 (f=0.951)  f(0.015)=0.879  (0.2s)
+  low_quartz                   sub=0.50 rep=1 n=   720 h*_kneedle=0.0851 (f=0.225)  h*_curv=0.0102 (f=0.950)  f(0.015)=0.876  (0.2s)
+  low_quartz                   sub=0.50 rep=2 n=   720 h*_kneedle=0.0851 (f=0.223)  h*_curv=0.0102 (f=0.951)  f(0.015)=0.881  (0.2s)
+  low_quartz                   sub=0.75 rep=0 n=  1080 h*_kneedle=0.0756 (f=0.230)  h*_curv=0.0056 (f=0.985)  f(0.015)=0.856  (0.4s)
+  low_quartz                   sub=0.75 rep=1 n=  1080 h*_kneedle=0.0756 (f=0.233)  h*_curv=0.0056 (f=0.985)  f(0.015)=0.855  (0.4s)
+  low_quartz                   sub=0.75 rep=2 n=  1080 h*_kneedle=0.0756 (f=0.231)  h*_curv=0.0056 (f=0.984)  f(0.015)=0.852  (0.4s)
+  low_tridymite                sub=1.00 rep=0 n= 23040 h*_kneedle=0.0530 (f=0.213)  h*_curv=0.0063 (f=0.966)  f(0.015)=0.707  (18.6s)
+  low_tridymite                sub=0.25 rep=0 n=  5760 h*_kneedle=0.0597 (f=0.219)  h*_curv=0.0050 (f=0.995)  f(0.015)=0.794  (4.0s)
+  low_tridymite                sub=0.25 rep=1 n=  5760 h*_kneedle=0.0597 (f=0.220)  h*_curv=0.0050 (f=0.995)  f(0.015)=0.794  (4.0s)
+  low_tridymite                sub=0.25 rep=2 n=  5760 h*_kneedle=0.0597 (f=0.219)  h*_curv=0.0050 (f=0.994)  f(0.015)=0.791  (4.6s)
+  low_tridymite                sub=0.50 rep=0 n= 11520 h*_kneedle=0.0597 (f=0.204)  h*_curv=0.0071 (f=0.969)  f(0.015)=0.749  (9.4s)
+  low_tridymite                sub=0.50 rep=1 n= 11520 h*_kneedle=0.0597 (f=0.204)  h*_curv=0.0071 (f=0.970)  f(0.015)=0.751  (9.4s)
+  low_tridymite                sub=0.50 rep=2 n= 11520 h*_kneedle=0.0597 (f=0.203)  h*_curv=0.0071 (f=0.969)  f(0.015)=0.749  (9.1s)
+  low_tridymite                sub=0.75 rep=0 n= 17280 h*_kneedle=0.0530 (f=0.219)  h*_curv=0.0063 (f=0.972)  f(0.015)=0.725  (14.6s)
+  low_tridymite                sub=0.75 rep=1 n= 17280 h*_kneedle=0.0530 (f=0.219)  h*_curv=0.0063 (f=0.972)  f(0.015)=0.724  (14.4s)
+  low_tridymite                sub=0.75 rep=2 n= 17280 h*_kneedle=0.0530 (f=0.219)  h*_curv=0.0063 (f=0.972)  f(0.015)=0.725  (12.2s)
+  moganite                     sub=1.00 rep=0 n=  5760 h*_kneedle=0.0597 (f=0.209)  h*_curv=0.0056 (f=0.968)  f(0.015)=0.716  (3.3s)
+  moganite                     sub=0.25 rep=0 n=  1440 h*_kneedle=0.0672 (f=0.225)  h*_curv=0.0050 (f=0.993)  f(0.015)=0.817  (0.7s)
+  moganite                     sub=0.25 rep=1 n=  1440 h*_kneedle=0.0672 (f=0.226)  h*_curv=0.0050 (f=0.993)  f(0.015)=0.821  (0.7s)
+  moganite                     sub=0.25 rep=2 n=  1440 h*_kneedle=0.0672 (f=0.221)  h*_curv=0.0050 (f=0.993)  f(0.015)=0.813  (0.7s)
+  moganite                     sub=0.50 rep=0 n=  2880 h*_kneedle=0.0597 (f=0.227)  h*_curv=0.0071 (f=0.959)  f(0.015)=0.767  (1.9s)
+  moganite                     sub=0.50 rep=1 n=  2880 h*_kneedle=0.0597 (f=0.229)  h*_curv=0.0071 (f=0.957)  f(0.015)=0.764  (1.9s)
+  moganite                     sub=0.50 rep=2 n=  2880 h*_kneedle=0.0597 (f=0.227)  h*_curv=0.0071 (f=0.959)  f(0.015)=0.768  (1.9s)
+  moganite                     sub=0.75 rep=0 n=  4320 h*_kneedle=0.0597 (f=0.217)  h*_curv=0.0063 (f=0.961)  f(0.015)=0.736  (3.4s)
+  moganite                     sub=0.75 rep=1 n=  4320 h*_kneedle=0.0597 (f=0.217)  h*_curv=0.0063 (f=0.961)  f(0.015)=0.737  (2.9s)
+  moganite                     sub=0.75 rep=2 n=  4320 h*_kneedle=0.0597 (f=0.217)  h*_curv=0.0063 (f=0.961)  f(0.015)=0.736  (3.4s)
+  quench                       sub=1.00 rep=0 n= 48000 h*_kneedle=0.0183 (f=0.955)  h*_curv=0.0145 (f=0.988)  f(0.015)=0.985  (45.5s)
+  quench                       sub=0.25 rep=0 n= 12000 h*_kneedle=0.0206 (f=0.956)  h*_curv=0.0163 (f=0.989)  f(0.015)=0.993  (10.3s)
+  quench                       sub=0.25 rep=1 n= 12000 h*_kneedle=0.0206 (f=0.957)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.993  (10.4s)
+  quench                       sub=0.25 rep=2 n= 12000 h*_kneedle=0.0206 (f=0.957)  h*_curv=0.0050 (f=1.000)  f(0.015)=0.993  (10.2s)
+  quench                       sub=0.50 rep=0 n= 24000 h*_kneedle=0.0183 (f=0.967)  h*_curv=0.0163 (f=0.983)  f(0.015)=0.990  (20.8s)
+  quench                       sub=0.50 rep=1 n= 24000 h*_kneedle=0.0183 (f=0.967)  h*_curv=0.0163 (f=0.984)  f(0.015)=0.990  (20.7s)
+  quench                       sub=0.50 rep=2 n= 24000 h*_kneedle=0.0183 (f=0.968)  h*_curv=0.0163 (f=0.984)  f(0.015)=0.990  (20.5s)
+  quench                       sub=0.75 rep=0 n= 36000 h*_kneedle=0.0183 (f=0.961)  h*_curv=0.0145 (f=0.990)  f(0.015)=0.987  (34.3s)
+  quench                       sub=0.75 rep=1 n= 36000 h*_kneedle=0.0183 (f=0.961)  h*_curv=0.0145 (f=0.990)  f(0.015)=0.987  (32.4s)
+  quench                       sub=0.75 rep=2 n= 36000 h*_kneedle=0.0183 (f=0.961)  h*_curv=0.0145 (f=0.990)  f(0.015)=0.987  (31.6s)
+  stishovite                   sub=1.00 rep=0 n=   960 h*_kneedle=0.0756 (f=0.237)  h*_curv=0.0080 (f=0.956)  f(0.015)=0.817  (0.3s)
+  stishovite                   sub=0.25 rep=0 n=   240 h*_kneedle=0.0957 (f=0.239)  h*_curv=0.0050 (f=0.999)  f(0.015)=0.912  (0.0s)
+  stishovite                   sub=0.25 rep=1 n=   240 h*_kneedle=0.0957 (f=0.250)  h*_curv=0.0050 (f=0.997)  f(0.015)=0.905  (0.0s)
+  stishovite                   sub=0.25 rep=2 n=   240 h*_kneedle=0.0957 (f=0.245)  h*_curv=0.0050 (f=0.997)  f(0.015)=0.910  (0.0s)
+  stishovite                   sub=0.50 rep=0 n=   480 h*_kneedle=0.0851 (f=0.236)  h*_curv=0.0050 (f=0.995)  f(0.015)=0.868  (0.1s)
+  stishovite                   sub=0.50 rep=1 n=   480 h*_kneedle=0.0851 (f=0.239)  h*_curv=0.0050 (f=0.996)  f(0.015)=0.873  (0.1s)
+  stishovite                   sub=0.50 rep=2 n=   480 h*_kneedle=0.0851 (f=0.241)  h*_curv=0.0050 (f=0.995)  f(0.015)=0.864  (0.1s)
+  stishovite                   sub=0.75 rep=0 n=   720 h*_kneedle=0.0756 (f=0.245)  h*_curv=0.0050 (f=0.994)  f(0.015)=0.837  (0.2s)
+  stishovite                   sub=0.75 rep=1 n=   720 h*_kneedle=0.0756 (f=0.247)  h*_curv=0.0050 (f=0.993)  f(0.015)=0.833  (0.2s)
+  stishovite                   sub=0.75 rep=2 n=   720 h*_kneedle=0.0756 (f=0.247)  h*_curv=0.0050 (f=0.993)  f(0.015)=0.835  (0.2s)
+  tridymite_C2221              sub=1.00 rep=0 n=  1920 h*_kneedle=0.0419 (f=0.240)  h*_curv=0.0050 (f=0.960)  f(0.015)=0.562  (1.0s)
+  tridymite_C2221              sub=0.25 rep=0 n=   480 h*_kneedle=0.0530 (f=0.254)  h*_curv=0.0050 (f=0.984)  f(0.015)=0.673  (0.1s)
+  tridymite_C2221              sub=0.25 rep=1 n=   480 h*_kneedle=0.0530 (f=0.252)  h*_curv=0.0050 (f=0.985)  f(0.015)=0.681  (0.1s)
+  tridymite_C2221              sub=0.25 rep=2 n=   480 h*_kneedle=0.0530 (f=0.246)  h*_curv=0.0050 (f=0.983)  f(0.015)=0.664  (0.1s)
+  tridymite_C2221              sub=0.50 rep=0 n=   960 h*_kneedle=0.0471 (f=0.240)  h*_curv=0.0050 (f=0.974)  f(0.015)=0.611  (0.3s)
+  tridymite_C2221              sub=0.50 rep=1 n=   960 h*_kneedle=0.0419 (f=0.263)  h*_curv=0.0050 (f=0.975)  f(0.015)=0.608  (0.3s)
+  tridymite_C2221              sub=0.50 rep=2 n=   960 h*_kneedle=0.0471 (f=0.240)  h*_curv=0.0056 (f=0.959)  f(0.015)=0.612  (0.3s)
+  tridymite_C2221              sub=0.75 rep=0 n=  1440 h*_kneedle=0.0419 (f=0.248)  h*_curv=0.0050 (f=0.967)  f(0.015)=0.583  (0.7s)
+  tridymite_C2221              sub=0.75 rep=1 n=  1440 h*_kneedle=0.0419 (f=0.250)  h*_curv=0.0050 (f=0.967)  f(0.015)=0.582  (0.7s)
+  tridymite_C2221              sub=0.75 rep=2 n=  1440 h*_kneedle=0.0419 (f=0.248)  h*_curv=0.0050 (f=0.967)  f(0.015)=0.582  (0.7s)
+  tridymite_P212121            sub=1.00 rep=0 n=  5760 h*_kneedle=0.0530 (f=0.215)  h*_curv=0.0063 (f=0.966)  f(0.015)=0.706  (4.1s)
+  tridymite_P212121            sub=0.25 rep=0 n=  1440 h*_kneedle=0.0597 (f=0.233)  h*_curv=0.0050 (f=0.994)  f(0.015)=0.806  (0.7s)
+  tridymite_P212121            sub=0.25 rep=1 n=  1440 h*_kneedle=0.0597 (f=0.231)  h*_curv=0.0050 (f=0.995)  f(0.015)=0.808  (0.6s)
+  tridymite_P212121            sub=0.25 rep=2 n=  1440 h*_kneedle=0.0597 (f=0.227)  h*_curv=0.0080 (f=0.974)  f(0.015)=0.809  (0.7s)
+  tridymite_P212121            sub=0.50 rep=0 n=  2880 h*_kneedle=0.0597 (f=0.209)  h*_curv=0.0063 (f=0.978)  f(0.015)=0.757  (1.9s)
+  tridymite_P212121            sub=0.50 rep=1 n=  2880 h*_kneedle=0.0597 (f=0.210)  h*_curv=0.0063 (f=0.979)  f(0.015)=0.754  (1.9s)
+  tridymite_P212121            sub=0.50 rep=2 n=  2880 h*_kneedle=0.0597 (f=0.209)  h*_curv=0.0063 (f=0.978)  f(0.015)=0.756  (1.9s)
+  tridymite_P212121            sub=0.75 rep=0 n=  4320 h*_kneedle=0.0530 (f=0.222)  h*_curv=0.0071 (f=0.960)  f(0.015)=0.725  (3.4s)
+  tridymite_P212121            sub=0.75 rep=1 n=  4320 h*_kneedle=0.0530 (f=0.223)  h*_curv=0.0071 (f=0.960)  f(0.015)=0.725  (3.4s)
+  tridymite_P212121            sub=0.75 rep=2 n=  4320 h*_kneedle=0.0530 (f=0.223)  h*_curv=0.0050 (f=0.987)  f(0.015)=0.727  (3.4s)
+done in 1036.8s -> results/ext/sio2/funiq/groups_s0
+== elbows on full groups
+                       n  f_at_0.015  h_lin_knee  f_lin_knee  h_lin_curv  f_lin_curv  h_log_knee  f_log_knee  h_ftarget  f_at_hmax
+scope                                                                                                                             
+Si-diamond           640      0.4447      0.0756      0.0737      0.0413      0.1683      0.0471      0.1433     0.0261     0.0022
+beta_cristobalite   1920      0.9131      0.0957      0.2010      0.1087      0.1785      0.0957      0.2010     0.0672     0.0488
+beta_quartz          720      0.7534      0.0851      0.2011      0.1019      0.1755      0.0672      0.2446     0.0530     0.0600
+beta_tridymite       960      0.6552      0.0756      0.1873      0.0950      0.1585      0.0597      0.2266     0.0471     0.0574
+bulk_amo           48000      0.8822      0.0957      0.1925      0.1035      0.1805      0.0756      0.2366     0.0597     0.0410
+chabazite          17280      0.6088      0.0756      0.1635      0.0929      0.1381      0.0530      0.2218     0.0419     0.0370
+coesite             7680      0.7930      0.0851      0.1811      0.1025      0.1536      0.0756      0.2025     0.0530     0.0472
+liquid             48000      0.9960      0.1212      0.2071      0.1179      0.2139      0.0206      0.9686     0.0957     0.0412
+low_cristobalite    1920      0.6873      0.0756      0.1727      0.4874      0.0499      0.0530      0.2331     0.0419     0.0480
+low_quartz          1440      0.8399      0.0851      0.2006      0.1030      0.1715      0.0756      0.2227     0.0597     0.0542
+low_tridymite      23040      0.7074      0.0756      0.1520      0.0949      0.1250      0.0530      0.2128     0.0419     0.0366
+moganite            5760      0.7168      0.0756      0.1690      0.0967      0.1378      0.0597      0.2094     0.0419     0.0444
+quench             48000      0.9849      0.1077      0.2030      0.1111      0.1975      0.0183      0.9554     0.0756     0.0406
+stishovite           960      0.8174      0.0851      0.2144      0.1038      0.1835      0.0756      0.2366     0.0597     0.0813
+tridymite_C2221     1920      0.5623      0.0672      0.1657      0.4924      0.0522      0.0419      0.2399     0.0331     0.0511
+tridymite_P212121   5760      0.7064      0.0756      0.1553      0.0947      0.1296      0.0530      0.2154     0.0419     0.0429
+
+== calibration vs values quoted in the paper
+
+== robustness: h_lin_knee (mean over reps) vs subsample fraction
+subsample           0.25   0.50   0.75   1.00
+scope                                        
+Si-diamond        0.0756 0.0756 0.0756 0.0756
+beta_cristobalite 0.1077 0.1077 0.0957 0.0957
+beta_quartz       0.0957 0.0957 0.0851 0.0851
+beta_tridymite    0.0851 0.0851 0.0756 0.0756
+bulk_amo          0.0957 0.0957 0.0957 0.0957
+chabazite         0.0851 0.0756 0.0756 0.0756
+coesite           0.0957 0.0851 0.0851 0.0851
+liquid            0.1212 0.1212 0.1212 0.1212
+low_cristobalite  0.0851 0.0756 0.0756 0.0756
+low_quartz        0.0957 0.0957 0.0851 0.0851
+low_tridymite     0.0756 0.0756 0.0756 0.0756
+moganite          0.0851 0.0756 0.0756 0.0756
+quench            0.1077 0.1077 0.1077 0.1077
+stishovite        0.0957 0.0957 0.0957 0.0851
+tridymite_C2221   0.0756 0.0672 0.0672 0.0672
+tridymite_P212121 0.0756 0.0756 0.0756 0.0756
+scripts/external_pipeline.sh: line 43: syntax error near unexpected token `;;'

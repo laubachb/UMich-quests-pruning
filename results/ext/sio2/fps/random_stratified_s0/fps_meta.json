@@ -1,0 +1,88 @@
+{
+  "xyz": "data/external/sio2/train_desc.xyz",
+  "mode": "random_stratified",
+  "fps_seed": 0,
+  "n_env": 214000,
+  "scopes": {
+    "Si-diamond": {
+      "n": 640,
+      "start": 222,
+      "file": "fps_order_Si-diamond.npy"
+    },
+    "beta_cristobalite": {
+      "n": 1920,
+      "start": 699,
+      "file": "fps_order_beta_cristobalite.npy"
+    },
+    "beta_quartz": {
+      "n": 720,
+      "start": 3233,
+      "file": "fps_order_beta_quartz.npy"
+    },
+    "beta_tridymite": {
+      "n": 960,
+      "start": 3943,
+      "file": "fps_order_beta_tridymite.npy"
+    },
+    "bulk_amo": {
+      "n": 48000,
+      "start": 37773,
+      "file": "fps_order_bulk_amo.npy"
+    },
+    "chabazite": {
+      "n": 17280,
+      "start": 55602,
+      "file": "fps_order_chabazite.npy"
+    },
+    "coesite": {
+      "n": 7680,
+      "start": 76675,
+      "file": "fps_order_coesite.npy"
+    },
+    "liquid": {
+      "n": 48000,
+      "start": 95438,
+      "file": "fps_order_liquid.npy"
+    },
+    "low_cristobalite": {
+      "n": 1920,
+      "start": 125712,
+      "file": "fps_order_low_cristobalite.npy"
+    },
+    "low_quartz": {
+      "n": 1440,
+      "start": 128465,
+      "file": "fps_order_low_quartz.npy"
+    },
+    "low_tridymite": {
+      "n": 23040,
+      "start": 147834,
+      "file": "fps_order_low_tridymite.npy"
+    },
+    "moganite": {
+      "n": 5760,
+      "start": 155205,
+      "file": "fps_order_moganite.npy"
+    },
+    "quench": {
+      "n": 48000,
+      "start": 201641,
+      "file": "fps_order_quench.npy"
+    },
+    "stishovite": {
+      "n": 960,
+      "start": 206312,
+      "file": "fps_order_stishovite.npy"
+    },
+    "tridymite_C2221": {
+      "n": 1920,
+      "start": 207230,
+      "file": "fps_order_tridymite_C2221.npy"
+    },
+    "tridymite_P212121": {
+      "n": 5760,
+      "start": 212320,
+      "file": "fps_order_tridymite_P212121.npy"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "xyz": "data/external/sio2/train_desc.xyz",
+  "mode": "random_global",
+  "fps_seed": 0,
+  "n_env": 214000,
+  "scopes": {
+    "global": {
+      "n": 214000,
+      "start": 33296,
+      "file": "fps_order_global.npy"
+    }
+  }
+}

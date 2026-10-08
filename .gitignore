@@ -16,3 +16,4 @@ outputs/
 slurm_output/
 *.egg-info/
 results/pruned/
+results/paper/rdf_data_summary.json

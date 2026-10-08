@@ -22,3 +22,4 @@ data/external/*/*.xyz
 results/test_distance/nn_distances.csv
 results/test_distance/test_descriptors.npy
 results/test_distance/nn_distances.csv
+*.core

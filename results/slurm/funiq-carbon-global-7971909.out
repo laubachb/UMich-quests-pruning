@@ -1,0 +1,8 @@
+loaded 684 frames, 134720 envs (1.9s)
+resuming; 0 scopes already done
+  global                       sub=1.00 rep=0 n=134720 h*_kneedle=0.0145 (f=0.880)  h*_curv=0.0050 (f=0.961)  f(0.015)=0.873  (142.1s)
+  global                       sub=0.25 rep=0 n= 33680 h*_kneedle=0.0183 (f=0.866)  h*_curv=0.0050 (f=0.970)  f(0.015)=0.903  (34.9s)
+  global                       sub=0.25 rep=1 n= 33680 h*_kneedle=0.0163 (f=0.890)  h*_curv=0.0050 (f=0.970)  f(0.015)=0.903  (28.5s)
+  global                       sub=0.50 rep=0 n= 67360 h*_kneedle=0.0163 (f=0.872)  h*_curv=0.0050 (f=0.965)  f(0.015)=0.887  (84.0s)
+  global                       sub=0.50 rep=1 n= 67360 h*_kneedle=0.0163 (f=0.873)  h*_curv=0.0050 (f=0.965)  f(0.015)=0.888  (71.1s)
+done in 362.7s -> results/funiq/global_s0

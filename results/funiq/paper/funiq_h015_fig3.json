@@ -1,0 +1,8 @@
+{
+  "_provenance": "f_uniq at h = 0.015 per group, read off Fig. 3 (blue bars); for cross-checking the re-run sweep.",
+  "HD liquid_2.0gcc_6000": 0.955, "HD liquid_2.0gcc_7000": 0.99, "HD liquid_2.5gcc_6000": 0.975,
+  "HD liquid_3.0gcc_8000": 0.95, "HD liquid_3.6gcc_6000": 0.935, "LD liquid_0.5gcc_1000": 0.915,
+  "LD liquid_1.0gcc_2000": 0.945, "diamond_0.0gcc_CC": 0.245, "diamond_3.67gcc_3000": 0.68,
+  "diamond_3.68gcc_300": 0.345, "graphite_0.0gcc_CC": 0.33, "graphite_2.39gcc_300": 0.50,
+  "graphite_2.56gcc_1500": 0.795, "graphite_2.67gcc_3000": 0.85, "global": 0.884
+}

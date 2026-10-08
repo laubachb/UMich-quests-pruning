@@ -45,7 +45,7 @@ def main():
     summary = []
     jobs = [(f, {s: f for s in orders}, f"{f:.3f}") for f in args.fractions]
     if args.budget:
-        budget = json.load(open(args.budget))
+        budget = {k: v for k, v in json.load(open(args.budget)).items() if not k.startswith("_")}
         missing = set(orders) - set(budget)
         assert not missing, f"budget.json lacks scopes: {sorted(missing)}"
         tot = sum(budget[s] * len(orders[s]) for s in orders) / n

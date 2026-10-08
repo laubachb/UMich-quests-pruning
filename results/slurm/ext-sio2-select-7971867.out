@@ -26,3 +26,4 @@ loaded 2350 frames, 214000 environments, d=189 (7.6s)
   tridymite_C2221              n=   1920 start= 208183 (0.1s)
   tridymite_P212121            n=   5760 start= 212441 (0.7s)
 done in 256.7s -> results/ext/sio2/fps/stratified_s0
+[2026-10-08T12:45:34.408] error: *** JOB 7971867 ON dane9 CANCELLED AT 2026-10-08T12:45:34 DUE to SIGNAL Terminated ***

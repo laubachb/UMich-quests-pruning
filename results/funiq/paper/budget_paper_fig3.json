@@ -1,0 +1,17 @@
+{
+  "_provenance": "f_uniq at the elbow-selected bandwidth per group, read off Fig. 3 (red bars) of the ChemRxiv v1 manuscript at 300 dpi; +/-0.01. Replace with Supplementary Tab. 2 values when available. These are the per-group retention fractions of the paper's Stratified-Adaptive setting.",
+  "HD liquid_2.0gcc_6000": 0.265,
+  "HD liquid_2.0gcc_7000": 0.48,
+  "HD liquid_2.5gcc_6000": 0.36,
+  "HD liquid_3.0gcc_8000": 0.205,
+  "HD liquid_3.6gcc_6000": 0.47,
+  "LD liquid_0.5gcc_1000": 0.375,
+  "LD liquid_1.0gcc_2000": 0.55,
+  "diamond_0.0gcc_CC": 0.27,
+  "diamond_3.67gcc_3000": 0.315,
+  "diamond_3.68gcc_300": 0.285,
+  "graphite_0.0gcc_CC": 0.17,
+  "graphite_2.39gcc_300": 0.35,
+  "graphite_2.56gcc_1500": 0.30,
+  "graphite_2.67gcc_3000": 0.285
+}

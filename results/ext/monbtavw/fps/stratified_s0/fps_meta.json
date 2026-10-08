@@ -1,0 +1,123 @@
+{
+  "xyz": "data/external/monbtavw/train_desc.xyz",
+  "mode": "stratified",
+  "fps_seed": 0,
+  "desc_key": "quests_descriptor_descriptors",
+  "n_env": 101486,
+  "scopes": {
+    "BCC_alloys": {
+      "n": 26730,
+      "start": 22737,
+      "file": "fps_order_BCC_alloys.npy",
+      "radius_file": "fps_radius_BCC_alloys.npy"
+    },
+    "BCC_distorted": {
+      "n": 400,
+      "start": 26984,
+      "file": "fps_order_BCC_distorted.npy",
+      "radius_file": "fps_radius_BCC_distorted.npy"
+    },
+    "HEA_interstitial": {
+      "n": 7336,
+      "start": 30879,
+      "file": "fps_order_HEA_interstitial.npy",
+      "radius_file": "fps_radius_HEA_interstitial.npy"
+    },
+    "HEA_short_range": {
+      "n": 4400,
+      "start": 35653,
+      "file": "fps_order_HEA_short_range.npy",
+      "radius_file": "fps_radius_HEA_short_range.npy"
+    },
+    "HEA_small": {
+      "n": 4320,
+      "start": 40195,
+      "file": "fps_order_HEA_small.npy",
+      "radius_file": "fps_radius_HEA_small.npy"
+    },
+    "HEA_surface": {
+      "n": 2557,
+      "start": 43290,
+      "file": "fps_order_HEA_surface.npy",
+      "radius_file": "fps_radius_HEA_surface.npy"
+    },
+    "HEA_vacancies": {
+      "n": 4492,
+      "start": 46080,
+      "file": "fps_order_HEA_vacancies.npy",
+      "radius_file": "fps_radius_HEA_vacancies.npy"
+    },
+    "binary_BCC_alloys": {
+      "n": 12960,
+      "start": 50449,
+      "file": "fps_order_binary_BCC_alloys.npy",
+      "radius_file": "fps_radius_binary_BCC_alloys.npy"
+    },
+    "divacancy": {
+      "n": 2360,
+      "start": 63608,
+      "file": "fps_order_divacancy.npy",
+      "radius_file": "fps_radius_divacancy.npy"
+    },
+    "double_self_interstitial_defect": {
+      "n": 3090,
+      "start": 68068,
+      "file": "fps_order_double_self_interstitial_defect.npy",
+      "radius_file": "fps_radius_double_self_interstitial_defect.npy"
+    },
+    "gamma_surface": {
+      "n": 480,
+      "start": 68956,
+      "file": "fps_order_gamma_surface.npy",
+      "radius_file": "fps_radius_gamma_surface.npy"
+    },
+    "liquid": {
+      "n": 18432,
+      "start": 85948,
+      "file": "fps_order_liquid.npy",
+      "radius_file": "fps_radius_liquid.npy"
+    },
+    "ordered_alloys": {
+      "n": 2112,
+      "start": 88620,
+      "file": "fps_order_ordered_alloys.npy",
+      "radius_file": "fps_radius_ordered_alloys.npy"
+    },
+    "phonon": {
+      "n": 1080,
+      "start": 90324,
+      "file": "fps_order_phonon.npy",
+      "radius_file": "fps_radius_phonon.npy"
+    },
+    "self_intersitial_defect": {
+      "n": 2420,
+      "start": 93098,
+      "file": "fps_order_self_intersitial_defect.npy",
+      "radius_file": "fps_radius_self_intersitial_defect.npy"
+    },
+    "short_range": {
+      "n": 2165,
+      "start": 94748,
+      "file": "fps_order_short_range.npy",
+      "radius_file": "fps_radius_short_range.npy"
+    },
+    "suface_liquid": {
+      "n": 2752,
+      "start": 97074,
+      "file": "fps_order_suface_liquid.npy",
+      "radius_file": "fps_radius_suface_liquid.npy"
+    },
+    "tri_vacancy": {
+      "n": 2340,
+      "start": 99358,
+      "file": "fps_order_tri_vacancy.npy",
+      "radius_file": "fps_radius_tri_vacancy.npy"
+    },
+    "vacancy": {
+      "n": 1060,
+      "start": 101019,
+      "file": "fps_order_vacancy.npy",
+      "radius_file": "fps_radius_vacancy.npy"
+    }
+  }
+}

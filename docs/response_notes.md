@@ -36,7 +36,9 @@ runs use seeds 0,1,2 (E1-E5).
 
 ## Reviewer 2
 
-**#1 Elbow exists for uniform distributions too.** Agree in part. The elbow is an operational scale,
+**#1 Elbow exists for uniform distributions too.** PENDING null test (`pruning/funiq_null.py`, job
+running): f_uniq(h) on a covariance-matched Gaussian and a column-shuffled surrogate of each group's
+descriptors, same n/d/h-grid; compare elbow h* and f_uniq with the real group. Agree in part. The elbow is an operational scale,
 not a redundancy proof. Evidence that it is informative: elbow h* differs by 7x between diamond 300 K
 and HD liquids; f_uniq(0.015) says 99 % of liquid environments are unique, the elbow says 20-35 %.
 Robustness: see R1 #3. PENDING: same curves on SiO2 (14 polymorphs + liquid/amorphous) and MoNbTaVW.
@@ -46,10 +48,14 @@ Correct, and the revision must say so. The adaptive step only sets the per-group
 experiments isolate it: E4 (paper budget, 31.2 % overall, per-group 0.17-0.55) vs E5 (global and
 stratified at a flat 31.2 %). E4_midlo uses the re-derived rule (33.2 %).
 
-**#3 Why entropy at all if FPS does the selection.** DONE (partial). FPS covering radius r(k) is
-recorded (`results/stats_train/fps_radius_*.csv`): at 5 % retention r = 0.12-0.17 for liquids, 0.03-0.06
-for crystals, i.e. the same scale as the elbow bandwidths, so a kernel-free criterion exists. GPU:
-random baselines (E1 random_global / random_stratified) answer whether FPS matters at all.
+**#3 Why entropy at all if FPS does the selection.** DONE. `results/stats_train/radius_vs_elbow.csv`.
+The FPS covering radius at the elbow retention fraction equals the elbow bandwidth: r/h* median 1.08
+(IQR 1.04-1.17) over the 12 non-cold-curve groups. Retaining f_uniq(h*) by FPS therefore leaves every
+discarded environment within ~h* of a kept one: the entropy elbow and the geometric covering radius are
+the same length scale, which is why h never needs to enter FPS. A kernel-free alternative (knee of
+log r(k) vs log fraction) gives similar budgets for crystals (0.35-0.42 vs 0.30-0.34) but larger ones for
+HD liquids (0.5-0.68 vs 0.34); correlation with the elbow budget 0.61. GPU: random baselines (E1) answer
+whether FPS matters at all.
 
 **Minor: prior redundancy-minimising generation.** Add citations (active learning by ChIMES; FPS /
 CUR / DFT-MD subsampling literature).

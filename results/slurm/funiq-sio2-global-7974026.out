@@ -1,2 +1,4 @@
 loaded 2350 frames, 214000 envs (7.7s)
   global                       sub=1.00 rep=0 n=214000 h*_kneedle=0.0957 (f=0.205)  h*_curv=0.0050 (f=0.993)  f(0.015)=0.880  (820.1s)
+  global                       sub=0.25 rep=0 n= 53500 h*_kneedle=0.1077 (f=0.206)  h*_curv=0.0050 (f=0.997)  f(0.015)=0.917  (81.1s)
+  global                       sub=0.25 rep=1 n= 53500 h*_kneedle=0.1077 (f=0.206)  h*_curv=0.0050 (f=0.997)  f(0.015)=0.918  (61.6s)

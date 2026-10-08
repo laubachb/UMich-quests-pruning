@@ -1,0 +1,24 @@
+train: 214000 envs (8s)
+test descriptors read from file: (53788, 189)
+test->train NN (41s)
+train->train LOO NN (163s)
+test->train(5% stratified) NN
+
+test group                        n            test->train       train->train LOO  ratio same-grp  ->5% subset
+test_Si-diamond                 160     0.0144     0.0167     0.0065     0.0097   2.21     1.00       0.0190
+test_beta_cristobalite          480     0.0398     0.0542     0.0405     0.0548   0.98     0.70       0.0571
+test_beta_quartz                180     0.0231     0.0324     0.0194     0.0308   1.19     0.97       0.0421
+test_beta_tridymite             240     0.0191     0.0262     0.0134     0.0209   1.42     0.87       0.0276
+test_bulk_amo                 12096     0.0418     0.0590     0.0382     0.0571   1.09     0.67       0.0579
+test_chabazite                 4320     0.0180     0.0257     0.0101     0.0142   1.79     1.00       0.0269
+test_coesite                   1920     0.0296     0.0389     0.0135     0.0185   2.19     0.99       0.0437
+test_liquid                   12096     0.0597     0.0832     0.0596     0.0834   1.00     0.52       0.0809
+test_low_cristobalite           480     0.0195     0.0248     0.0177     0.0250   1.10     0.89       0.0317
+test_low_quartz                 360     0.0262     0.0351     0.0250     0.0358   1.05     0.75       0.0374
+test_low_tridymite             5760     0.0225     0.0290     0.0130     0.0199   1.73     0.92       0.0342
+test_moganite                  1440     0.0232     0.0315     0.0122     0.0167   1.91     0.90       0.0348
+test_quench                   12096     0.0516     0.0705     0.0510     0.0701   1.01     0.46       0.0713
+test_stishovite                 240     0.0253     0.0329     0.0173     0.0272   1.46     1.00       0.0460
+test_tridymite_C2221            480     0.0175     0.0230     0.0115     0.0172   1.52     0.96       0.0258
+test_tridymite_P212121         1440     0.0198     0.0262     0.0157     0.0239   1.26     0.99       0.0320
+done (216s) -> results/ext/sio2/test_distance

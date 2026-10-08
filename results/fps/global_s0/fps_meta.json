@@ -1,0 +1,14 @@
+{
+  "xyz": "/p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz",
+  "mode": "global",
+  "fps_seed": 0,
+  "desc_key": "quests_descriptor_descriptors",
+  "n_env": 134720,
+  "scopes": {
+    "global": {
+      "n": 134720,
+      "start": 114596,
+      "file": "fps_order_global.npy"
+    }
+  }
+}

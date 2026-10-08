@@ -1,0 +1,29 @@
+/p/lustre1/laubach2/entropy-pruning/evaluation/test_train_distance.py:118: RuntimeWarning: divide by zero encountered in scalar divide
+  "d_train_train_p50": b[0], "d_train_train_p90": b[1], "ratio_p50": a[0] / b[0],
+train: 101486 envs (7s)
+test descriptors read from file: (25274, 378)
+test->train NN (12s)
+train->train LOO NN (46s)
+test->train(5% stratified) NN
+
+test group                        n            test->train       train->train LOO  ratio same-grp  ->5% subset
+test_BCC_alloys                6696     0.0339     0.0475     0.0340     0.0472   1.00     0.86       0.0551
+test_BCC_distorted              100     0.0606     0.1385     0.0000     0.0000    inf     0.54       0.0991
+test_HEA_interstitial          1839     0.0274     0.0582     0.0267     0.0567   1.03     0.67       0.0523
+test_HEA_short_range           1100     0.0103     0.0387     0.0093     0.0369   1.11     0.96       0.0530
+test_HEA_small                 1080     0.0316     0.0423     0.0332     0.0463   0.95     0.16       0.0522
+test_HEA_surface                683     0.0464     0.0697     0.0470     0.0722   0.99     0.38       0.0712
+test_HEA_vacancies             1129     0.0211     0.0328     0.0224     0.0343   0.94     0.61       0.0448
+test_binary_BCC_alloys         3240     0.0397     0.0556     0.0387     0.0559   1.02     0.90       0.0668
+test_divacancy                  590     0.0230     0.0319     0.0238     0.0331   0.97     0.27       0.0404
+test_double_self_interstitial_defect    610     0.0232     0.0462     0.0215     0.0379   1.08     0.34       0.0414
+test_gamma_surface              120     0.0165     0.0464     0.0165     0.0333   1.00     0.27       0.0312
+test_liquid                    4608     0.0703     0.0968     0.0672     0.0920   1.05     0.79       0.1028
+test_ordered_alloys             528     0.0171     0.0268     0.0152     0.0234   1.12     0.92       0.0316
+test_phonon                     270     0.0250     0.0380     0.0323     0.0505   0.77     0.16       0.0422
+test_self_intersitial_defect    605     0.0176     0.0309     0.0185     0.0322   0.95     0.19       0.0316
+test_short_range                538     0.0182     0.0396     0.0204     0.0409   0.89     0.36       0.0358
+test_suface_liquid              688     0.0428     0.0661     0.0386     0.0660   1.11     0.55       0.0627
+test_tri_vacancy                585     0.0245     0.0356     0.0242     0.0352   1.01     0.26       0.0415
+test_vacancy                    265     0.0127     0.0247     0.0157     0.0318   0.81     0.45       0.0235
+done (69s) -> results/ext/monbtavw/test_distance

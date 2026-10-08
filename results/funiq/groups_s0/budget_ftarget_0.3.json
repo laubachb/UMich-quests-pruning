@@ -1,0 +1,16 @@
+{
+  "HD liquid_2.0gcc_6000": 0.3,
+  "HD liquid_2.0gcc_7000": 0.3,
+  "HD liquid_2.5gcc_6000": 0.3,
+  "HD liquid_3.0gcc_8000": 0.3,
+  "HD liquid_3.6gcc_6000": 0.3,
+  "LD liquid_0.5gcc_1000": 0.3,
+  "LD liquid_1.0gcc_2000": 0.3,
+  "diamond_0.0gcc_CC": 0.3,
+  "diamond_3.67gcc_3000": 0.3,
+  "diamond_3.68gcc_300": 0.3,
+  "graphite_0.0gcc_CC": 0.3,
+  "graphite_2.39gcc_300": 0.3,
+  "graphite_2.56gcc_1500": 0.3,
+  "graphite_2.67gcc_3000": 0.3
+}

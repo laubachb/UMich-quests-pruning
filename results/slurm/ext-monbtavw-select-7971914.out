@@ -19,3 +19,6 @@ loaded 1702 frames, 101486 environments, d=378 (7.0s)
   tri_vacancy                  n=   2340 start=  99358 (0.1s)
   vacancy                      n=   1060 start= 101019 (0.0s)
 done in 34.3s -> results/ext/monbtavw/fps/stratified_s0
+loaded 1702 frames, 101486 environments, d=378 (6.7s)
+  global                       n= 101486 start=  86326 (334.8s)
+done in 341.5s -> results/ext/monbtavw/fps/global_s0

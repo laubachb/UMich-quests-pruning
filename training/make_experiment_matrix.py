@@ -17,6 +17,8 @@ Experiments (default settings; override with flags):
     E3 full     100% x train seeds                                -> reference
     E4 adaptive per-group elbow-derived fractions (requires --budget JSON from
                 pruning/elbow.py; skipped with a note if absent)   -> R2 #2
+    E5 matched  global_s0 / stratified_s0 at ONE fraction equal to E4's overall
+                retention (--matched-fraction)                     -> R2 crux
 
 Usage:
     python training/make_experiment_matrix.py --data DATA.xyz [--seeds 0 1 2]
@@ -38,6 +40,9 @@ def main():
     ap.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2])
     ap.add_argument("--fractions", type=float, nargs="+", default=[0.05, 0.10, 0.20])
     ap.add_argument("--budget", default=None, help="budget.json with per-group fractions for E4")
+    ap.add_argument("--matched-fraction", type=float, default=None,
+                    help="E5: global_s0 and stratified_s0 at this single fraction (the overall retention of the "
+                         "E4 budget), isolating per-group allocation from retention level")
     args = ap.parse_args()
 
     carbon = args.dataset == "carbon"
@@ -65,6 +70,13 @@ def main():
                                  f"{model_root}/{exp}/{sel}/f{f:.3f}/seed{s}"))
     for s in args.seeds:
         rows.append(("E3_full", "none", 1.0, s, args.data, f"{model_root}/E3_full/seed{s}"))
+    if args.matched_fraction:
+        for sel in ("global_s0", "stratified_s0"):
+            mask_cmds.setdefault(sel, set()).add(args.matched_fraction)
+            for s in args.seeds:
+                rows.append(("E5_matched", sel, args.matched_fraction, s,
+                             f"{pruned_root}/{sel}/{pruned_name(sel, f'{args.matched_fraction:.3f}')}",
+                             f"{model_root}/E5_matched/{sel}/f{args.matched_fraction:.3f}/seed{s}"))
     budget = args.budget and Path(args.budget).exists()
     if budget:
         for s in args.seeds:

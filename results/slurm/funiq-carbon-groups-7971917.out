@@ -8,3 +8,6 @@ resuming; 13 scopes already done
   graphite_2.67gcc_3000        sub=0.50 rep=1 n= 12480 h*_kneedle=0.0756 (f=0.129)  h*_curv=0.0050 (f=0.973)  f(0.015)=0.936  (9.2s)
   graphite_2.67gcc_3000        sub=0.50 rep=2 n= 12480 h*_kneedle=0.0756 (f=0.130)  h*_curv=0.0050 (f=0.973)  f(0.015)=0.936  (9.0s)
   graphite_2.67gcc_3000        sub=0.75 rep=0 n= 18720 h*_kneedle=0.0756 (f=0.124)  h*_curv=0.0050 (f=0.971)  f(0.015)=0.924  (14.3s)
+  graphite_2.67gcc_3000        sub=0.75 rep=1 n= 18720 h*_kneedle=0.0756 (f=0.124)  h*_curv=0.0050 (f=0.972)  f(0.015)=0.925  (14.6s)
+  graphite_2.67gcc_3000        sub=0.75 rep=2 n= 18720 h*_kneedle=0.0756 (f=0.124)  h*_curv=0.0050 (f=0.972)  f(0.015)=0.925  (15.4s)
+done in 100.2s -> results/funiq/groups_s0

@@ -38,3 +38,8 @@ loaded 684 frames, 134720 envs (1.9s)
   HD liquid_3.0gcc_8000        sub=0.50 rep=2 n= 14832 h*_kneedle=0.0261 (f=0.962)  h*_curv=0.0232 (f=0.981)  f(0.015)=0.993  (13.7s)
   HD liquid_3.0gcc_8000        sub=0.75 rep=0 n= 22248 h*_kneedle=0.0261 (f=0.951)  h*_curv=0.0206 (f=0.985)  f(0.015)=0.990  (22.2s)
   HD liquid_3.0gcc_8000        sub=0.75 rep=1 n= 22248 h*_kneedle=0.0261 (f=0.950)  h*_curv=0.0206 (f=0.984)  f(0.015)=0.990  (23.1s)
+  HD liquid_3.0gcc_8000        sub=0.75 rep=2 n= 22248 h*_kneedle=0.0261 (f=0.951)  h*_curv=0.0206 (f=0.985)  f(0.015)=0.991  (21.1s)
+OMP: Error #34: System unable to allocate necessary resources for OMP thread:
+OMP: System error #11: Resource temporarily unavailable
+OMP: Hint Try decreasing the value of OMP_NUM_THREADS.
+/var/spool/slurmd/job7971886/slurm_script: line 4: 1778295 Aborted                 (core dumped) python3 pruning/funiq_sweep.py /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz --out-dir results/funiq/groups_s0 --scopes groups --batch-size 2000

@@ -1,0 +1,78 @@
+{
+  "xyz": "/p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz",
+  "mode": "random_stratified",
+  "fps_seed": 0,
+  "n_env": 134720,
+  "scopes": {
+    "HD liquid_2.0gcc_6000": {
+      "n": 5576,
+      "start": 83390,
+      "file": "fps_order_HD_liquid_2.0gcc_6000.npy"
+    },
+    "HD liquid_2.0gcc_7000": {
+      "n": 1600,
+      "start": 97865,
+      "file": "fps_order_HD_liquid_2.0gcc_7000.npy"
+    },
+    "HD liquid_2.5gcc_6000": {
+      "n": 5000,
+      "start": 79801,
+      "file": "fps_order_HD_liquid_2.5gcc_6000.npy"
+    },
+    "HD liquid_3.0gcc_8000": {
+      "n": 29664,
+      "start": 24126,
+      "file": "fps_order_HD_liquid_3.0gcc_8000.npy"
+    },
+    "HD liquid_3.6gcc_6000": {
+      "n": 14312,
+      "start": 31330,
+      "file": "fps_order_HD_liquid_3.6gcc_6000.npy"
+    },
+    "LD liquid_0.5gcc_1000": {
+      "n": 5376,
+      "start": 65421,
+      "file": "fps_order_LD_liquid_0.5gcc_1000.npy"
+    },
+    "LD liquid_1.0gcc_2000": {
+      "n": 5440,
+      "start": 100044,
+      "file": "fps_order_LD_liquid_1.0gcc_2000.npy"
+    },
+    "diamond_0.0gcc_CC": {
+      "n": 1080,
+      "start": 97962,
+      "file": "fps_order_diamond_0.0gcc_CC.npy"
+    },
+    "diamond_3.67gcc_3000": {
+      "n": 14040,
+      "start": 78513,
+      "file": "fps_order_diamond_3.67gcc_3000.npy"
+    },
+    "diamond_3.68gcc_300": {
+      "n": 5400,
+      "start": 55028,
+      "file": "fps_order_diamond_3.68gcc_300.npy"
+    },
+    "graphite_0.0gcc_CC": {
+      "n": 3072,
+      "start": 70757,
+      "file": "fps_order_graphite_0.0gcc_CC.npy"
+    },
+    "graphite_2.39gcc_300": {
+      "n": 9600,
+      "start": 107680,
+      "file": "fps_order_graphite_2.39gcc_300.npy"
+    },
+    "graphite_2.56gcc_1500": {
+      "n": 9600,
+      "start": 110658,
+      "file": "fps_order_graphite_2.56gcc_1500.npy"
+    },
+    "graphite_2.67gcc_3000": {
+      "n": 24960,
+      "start": 120381,
+      "file": "fps_order_graphite_2.67gcc_3000.npy"
+    }
+  }
+}

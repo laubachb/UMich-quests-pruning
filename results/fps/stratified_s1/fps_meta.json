@@ -1,0 +1,93 @@
+{
+  "xyz": "/p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz",
+  "mode": "stratified",
+  "fps_seed": 1,
+  "desc_key": "quests_descriptor_descriptors",
+  "n_env": 134720,
+  "scopes": {
+    "HD liquid_2.0gcc_6000": {
+      "n": 5576,
+      "start": 60382,
+      "file": "fps_order_HD_liquid_2.0gcc_6000.npy",
+      "radius_file": "fps_radius_HD_liquid_2.0gcc_6000.npy"
+    },
+    "HD liquid_2.0gcc_7000": {
+      "n": 1600,
+      "start": 59498,
+      "file": "fps_order_HD_liquid_2.0gcc_7000.npy",
+      "radius_file": "fps_radius_HD_liquid_2.0gcc_7000.npy"
+    },
+    "HD liquid_2.5gcc_6000": {
+      "n": 5000,
+      "start": 104247,
+      "file": "fps_order_HD_liquid_2.5gcc_6000.npy",
+      "radius_file": "fps_radius_HD_liquid_2.5gcc_6000.npy"
+    },
+    "HD liquid_3.0gcc_8000": {
+      "n": 29664,
+      "start": 129154,
+      "file": "fps_order_HD_liquid_3.0gcc_8000.npy",
+      "radius_file": "fps_radius_HD_liquid_3.0gcc_8000.npy"
+    },
+    "HD liquid_3.6gcc_6000": {
+      "n": 14312,
+      "start": 3226,
+      "file": "fps_order_HD_liquid_3.6gcc_6000.npy",
+      "radius_file": "fps_radius_HD_liquid_3.6gcc_6000.npy"
+    },
+    "LD liquid_0.5gcc_1000": {
+      "n": 5376,
+      "start": 21199,
+      "file": "fps_order_LD_liquid_0.5gcc_1000.npy",
+      "radius_file": "fps_radius_LD_liquid_0.5gcc_1000.npy"
+    },
+    "LD liquid_1.0gcc_2000": {
+      "n": 5440,
+      "start": 105300,
+      "file": "fps_order_LD_liquid_1.0gcc_2000.npy",
+      "radius_file": "fps_radius_LD_liquid_1.0gcc_2000.npy"
+    },
+    "diamond_0.0gcc_CC": {
+      "n": 1080,
+      "start": 98064,
+      "file": "fps_order_diamond_0.0gcc_CC.npy",
+      "radius_file": "fps_radius_diamond_0.0gcc_CC.npy"
+    },
+    "diamond_3.67gcc_3000": {
+      "n": 14040,
+      "start": 41499,
+      "file": "fps_order_diamond_3.67gcc_3000.npy",
+      "radius_file": "fps_radius_diamond_3.67gcc_3000.npy"
+    },
+    "diamond_3.68gcc_300": {
+      "n": 5400,
+      "start": 35043,
+      "file": "fps_order_diamond_3.68gcc_300.npy",
+      "radius_file": "fps_radius_diamond_3.68gcc_300.npy"
+    },
+    "graphite_0.0gcc_CC": {
+      "n": 3072,
+      "start": 111837,
+      "file": "fps_order_graphite_0.0gcc_CC.npy",
+      "radius_file": "fps_radius_graphite_0.0gcc_CC.npy"
+    },
+    "graphite_2.39gcc_300": {
+      "n": 9600,
+      "start": 62711,
+      "file": "fps_order_graphite_2.39gcc_300.npy",
+      "radius_file": "fps_radius_graphite_2.39gcc_300.npy"
+    },
+    "graphite_2.56gcc_1500": {
+      "n": 9600,
+      "start": 39806,
+      "file": "fps_order_graphite_2.56gcc_1500.npy",
+      "radius_file": "fps_radius_graphite_2.56gcc_1500.npy"
+    },
+    "graphite_2.67gcc_3000": {
+      "n": 24960,
+      "start": 109699,
+      "file": "fps_order_graphite_2.67gcc_3000.npy",
+      "radius_file": "fps_radius_graphite_2.67gcc_3000.npy"
+    }
+  }
+}

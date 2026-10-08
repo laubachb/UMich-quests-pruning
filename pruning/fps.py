@@ -46,6 +46,10 @@ def fps_order(X, start, dtype=np.float32):
     n = len(X)
     sq = np.einsum("ij,ij->i", X, X)
     order = np.empty(n, dtype=np.int64)
+    # covering radius after k+1 selections: max over unselected points of the
+    # distance to the nearest selected point (the FPS-native resolution scale,
+    # cf. docs/reviews.txt Reviewer 2 #3)
+    radius = np.zeros(n, dtype=np.float64)
     min_d2 = np.full(n, np.inf, dtype=dtype)
     cur = int(start)
     for k in range(n):
@@ -55,7 +59,8 @@ def fps_order(X, start, dtype=np.float32):
         np.minimum(min_d2, d2, out=min_d2)
         min_d2[cur] = -np.inf  # never reselect
         cur = int(np.argmax(min_d2))
-    return order
+        radius[k] = np.sqrt(max(float(min_d2[cur]), 0.0)) if k < n - 1 else 0.0
+    return order, radius
 
 
 def main():
@@ -99,12 +104,14 @@ def main():
                else np.flatnonzero(env_group == scope))
         start_local = int(rng.integers(len(idx)))
         t1 = time.time()
-        order_local = fps_order(X[idx], start_local)
+        order_local, radius = fps_order(X[idx], start_local)
         order = idx[order_local]
         name = safe_name(scope)
         np.save(out / f"fps_order_{name}.npy", order)
+        np.save(out / f"fps_radius_{name}.npy", radius)
         meta["scopes"][scope] = {"n": int(len(idx)), "start": int(idx[start_local]),
-                                 "file": f"fps_order_{name}.npy"}
+                                 "file": f"fps_order_{name}.npy",
+                                 "radius_file": f"fps_radius_{name}.npy"}
         print(f"  {scope:28s} n={len(idx):7d} start={idx[start_local]:7d} "
               f"({time.time() - t1:.1f}s)")
 

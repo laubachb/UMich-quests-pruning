@@ -34,6 +34,15 @@ training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.10
 training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz 0 results/models/E1_method/random_stratified_s0/f0.200/seed0
 training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz 1 results/models/E1_method/random_stratified_s0/f0.200/seed1
 training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz 2 results/models/E1_method/random_stratified_s0/f0.200/seed2
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz 0 results/models/E2_fpsseed/global_s1/f0.050/seed0
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz 1 results/models/E2_fpsseed/global_s1/f0.050/seed1
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz 2 results/models/E2_fpsseed/global_s1/f0.050/seed2
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz 0 results/models/E2_fpsseed/global_s1/f0.100/seed0
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz 1 results/models/E2_fpsseed/global_s1/f0.100/seed1
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz 2 results/models/E2_fpsseed/global_s1/f0.100/seed2
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz 0 results/models/E2_fpsseed/global_s1/f0.200/seed0
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz 1 results/models/E2_fpsseed/global_s1/f0.200/seed1
+training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz 2 results/models/E2_fpsseed/global_s1/f0.200/seed2
 training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz 0 results/models/E2_fpsseed/stratified_s1/f0.050/seed0
 training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz 1 results/models/E2_fpsseed/stratified_s1/f0.050/seed1
 training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz 2 results/models/E2_fpsseed/stratified_s1/f0.050/seed2

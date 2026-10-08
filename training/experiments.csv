@@ -35,6 +35,15 @@ E1_method,random_stratified_s0,0.1,2,results/pruned/random_stratified_s0/DS_2km6
 E1_method,random_stratified_s0,0.2,0,results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz,results/models/E1_method/random_stratified_s0/f0.200/seed0
 E1_method,random_stratified_s0,0.2,1,results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz,results/models/E1_method/random_stratified_s0/f0.200/seed1
 E1_method,random_stratified_s0,0.2,2,results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz,results/models/E1_method/random_stratified_s0/f0.200/seed2
+E2_fpsseed,global_s1,0.05,0,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.050/seed0
+E2_fpsseed,global_s1,0.05,1,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.050/seed1
+E2_fpsseed,global_s1,0.05,2,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.050/seed2
+E2_fpsseed,global_s1,0.1,0,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.100/seed0
+E2_fpsseed,global_s1,0.1,1,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.100/seed1
+E2_fpsseed,global_s1,0.1,2,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.100/seed2
+E2_fpsseed,global_s1,0.2,0,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.200/seed0
+E2_fpsseed,global_s1,0.2,1,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.200/seed1
+E2_fpsseed,global_s1,0.2,2,results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz,results/models/E2_fpsseed/global_s1/f0.200/seed2
 E2_fpsseed,stratified_s1,0.05,0,results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz,results/models/E2_fpsseed/stratified_s1/f0.050/seed0
 E2_fpsseed,stratified_s1,0.05,1,results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz,results/models/E2_fpsseed/stratified_s1/f0.050/seed1
 E2_fpsseed,stratified_s1,0.05,2,results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz,results/models/E2_fpsseed/stratified_s1/f0.050/seed2

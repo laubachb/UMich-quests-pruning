@@ -58,7 +58,7 @@ def main():
         for i, a in enumerate(frames):
             a.arrays["weights"] = mask[offsets[i]:offsets[i + 1]].astype(float)
             if args.drop_descriptors:
-                a.arrays.pop(meta["desc_key"], None)
+                a.arrays.pop(meta.get("desc_key", "quests_descriptor_descriptors"), None)  # random_order.py metas have no desc_key
         path = out / f"{Path(args.xyz).stem}_{tag}_{meta['mode']}_s{meta['fps_seed']}.xyz"
         write(path, frames)
         frames_touched = int(sum(mask[offsets[i]:offsets[i + 1]].any() for i in range(len(frames))))

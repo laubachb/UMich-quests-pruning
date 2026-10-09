@@ -26,8 +26,13 @@ BIN=$(dirname "$PY")
 
 mkdir -p "$OUT"
 cd "$OUT"
+# Resume an interrupted run (e.g. hit a queue wall-clock limit) from its last checkpoint.
+RESUME=()
+if [ -f "$OUT/train_dir/last.ckpt" ] && [ ! -f "$OUT/train_dir/best.ckpt.done" ]; then
+    RESUME=("+ckpt_path=$OUT/train_dir/last.ckpt"); echo "resuming from $OUT/train_dir/last.ckpt"
+fi
 "$BIN/nequip-train" -cp "$REPO/training" -cn config \
-    hydra.run.dir="$OUT" \
+    hydra.run.dir="$OUT" "${RESUME[@]}" \
     data.train_file_path="$XYZ" data.val_file_path="$XYZ" data.test_file_path="$XYZ" \
     data.seed="$SEED" training_module.model.seed="$SEED" \
     trainer.accelerator="$DEVICE" "${SPECIES_OVERRIDE[@]}" \
@@ -37,4 +42,5 @@ CKPT="$OUT/train_dir/best.ckpt"
 COMPILED="$OUT/compiled_best.nequip.pth"
 CDEV=$([ "$DEVICE" = gpu ] && echo cuda || echo cpu)
 "$BIN/nequip-compile" "$CKPT" "$COMPILED" --mode torchscript --device "$CDEV" 2>&1 | tee compile.log
+touch "$CKPT.done"
 echo "done: $COMPILED"

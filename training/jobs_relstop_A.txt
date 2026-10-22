@@ -1,0 +1,84 @@
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.050_global_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/global_s0/f0.050/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.050_global_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/global_s0/f0.050/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.050_global_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/global_s0/f0.050/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.100_global_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/global_s0/f0.100/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.100_global_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/global_s0/f0.100/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.100_global_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/global_s0/f0.100/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.200_global_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/global_s0/f0.200/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.200_global_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/global_s0/f0.200/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.200_global_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/global_s0/f0.200/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.050_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.050/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.050_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.050/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.050_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.050/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.100_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.100/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.100_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.100/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.100_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.100/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.200_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.200/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.200_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.200/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.200_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/stratified_s0/f0.200/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.050_random_global_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.050/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.050_random_global_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.050/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.050_random_global_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.050/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.100_random_global_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.100/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.100_random_global_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.100/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.100_random_global_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.100/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.200_random_global_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.200/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.200_random_global_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.200/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_global_s0/train_0.200_random_global_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/random_global_s0/f0.200/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.050_random_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.050/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.050_random_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.050/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.050_random_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.050/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.100_random_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.100/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.100_random_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.100/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.100_random_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.100/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.200_random_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.200/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.200_random_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.200/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/random_stratified_s0/train_0.200_random_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E1_method/random_stratified_s0/f0.200/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.050_global_s1.xyz 0 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.050/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.050_global_s1.xyz 1 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.050/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.050_global_s1.xyz 2 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.050/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.100_global_s1.xyz 0 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.100/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.100_global_s1.xyz 1 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.100/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.100_global_s1.xyz 2 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.100/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.200_global_s1.xyz 0 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.200/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.200_global_s1.xyz 1 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.200/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s1/train_0.200_global_s1.xyz 2 results/ext/sio2/models_relstop/E2_fpsseed/global_s1/f0.200/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.050_stratified_s1.xyz 0 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.050/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.050_stratified_s1.xyz 1 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.050/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.050_stratified_s1.xyz 2 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.050/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.100_stratified_s1.xyz 0 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.100/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.100_stratified_s1.xyz 1 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.100/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.100_stratified_s1.xyz 2 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.100/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.200_stratified_s1.xyz 0 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.200/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.200_stratified_s1.xyz 1 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.200/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s1/train_0.200_stratified_s1.xyz 2 results/ext/sio2/models_relstop/E2_fpsseed/stratified_s1/f0.200/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/full/train_1.000_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E3_full/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/full/train_1.000_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E3_full/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/full/train_1.000_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E3_full/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.428_global_s0.xyz 0 results/ext/sio2/models_relstop/E5_matched/global_s0/f0.428/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.428_global_s0.xyz 1 results/ext/sio2/models_relstop/E5_matched/global_s0/f0.428/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.428_global_s0.xyz 2 results/ext/sio2/models_relstop/E5_matched/global_s0/f0.428/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.428_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E5_matched/stratified_s0/f0.428/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.428_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E5_matched/stratified_s0/f0.428/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.428_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E5_matched/stratified_s0/f0.428/seed2 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/adaptive_midlo_s0/train_adaptive_stratified_s0.xyz 0 results/ext/sio2/models_relstop/E4_adaptive_midlo/seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/adaptive_midlo_s0/train_adaptive_stratified_s0.xyz 1 results/ext/sio2/models_relstop/E4_adaptive_midlo/seed1 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/adaptive_midlo_s0/train_adaptive_stratified_s0.xyz 2 results/ext/sio2/models_relstop/E4_adaptive_midlo/seed2 gpu Si,O
+training/train_one.sh results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.050_direct.xyz 0 results/models_relstop/E6_baseline/direct/f0.050/seed0 gpu
+training/train_one.sh results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.050_direct.xyz 1 results/models_relstop/E6_baseline/direct/f0.050/seed1 gpu
+training/train_one.sh results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.050_direct.xyz 2 results/models_relstop/E6_baseline/direct/f0.050/seed2 gpu
+training/train_one.sh results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.100_direct.xyz 0 results/models_relstop/E6_baseline/direct/f0.100/seed0 gpu
+training/train_one.sh results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.100_direct.xyz 1 results/models_relstop/E6_baseline/direct/f0.100/seed1 gpu
+training/train_one.sh results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.100_direct.xyz 2 results/models_relstop/E6_baseline/direct/f0.100/seed2 gpu
+training/train_one.sh results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.050_msc.xyz 0 results/models_relstop/E6_baseline/msc/f0.050/seed0 gpu
+training/train_one.sh results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.050_msc.xyz 1 results/models_relstop/E6_baseline/msc/f0.050/seed1 gpu
+training/train_one.sh results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.050_msc.xyz 2 results/models_relstop/E6_baseline/msc/f0.050/seed2 gpu
+training/train_one.sh results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.100_msc.xyz 0 results/models_relstop/E6_baseline/msc/f0.100/seed0 gpu
+training/train_one.sh results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.100_msc.xyz 1 results/models_relstop/E6_baseline/msc/f0.100/seed1 gpu
+training/train_one.sh results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.100_msc.xyz 2 results/models_relstop/E6_baseline/msc/f0.100/seed2 gpu
+training/train_one.sh results/pruned/baseline_cur/DS_2km6t3p8hxx2_0_0.050_cur.xyz 0 results/models_relstop/E6_baseline/cur/f0.050/seed0 gpu
+training/train_one.sh results/pruned/baseline_cur/DS_2km6t3p8hxx2_0_0.050_cur.xyz 1 results/models_relstop/E6_baseline/cur/f0.050/seed1 gpu
+training/train_one.sh results/pruned/baseline_cur/DS_2km6t3p8hxx2_0_0.050_cur.xyz 2 results/models_relstop/E6_baseline/cur/f0.050/seed2 gpu
+training/train_one.sh results/pruned/baseline_cur/DS_2km6t3p8hxx2_0_0.100_cur.xyz 0 results/models_relstop/E6_baseline/cur/f0.100/seed0 gpu
+training/train_one.sh results/pruned/baseline_cur/DS_2km6t3p8hxx2_0_0.100_cur.xyz 1 results/models_relstop/E6_baseline/cur/f0.100/seed1 gpu
+training/train_one.sh results/pruned/baseline_cur/DS_2km6t3p8hxx2_0_0.100_cur.xyz 2 results/models_relstop/E6_baseline/cur/f0.100/seed2 gpu

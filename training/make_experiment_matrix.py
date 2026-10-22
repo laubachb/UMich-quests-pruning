@@ -69,8 +69,10 @@ def main():
                 for s in args.seeds:
                     rows.append((exp, sel, f, s, f"{pruned_root}/{sel}/{pruned_name(sel, f'{f:.3f}')}",
                                  f"{model_root}/{exp}/{sel}/f{f:.3f}/seed{s}"))
+    # E3 needs a per-atom 'weights' array for the masked loss: all-ones mask from make_masks at f = 1
+    full_xyz = f"{pruned_root}/full/{stem}_1.000_{json.load(open(REPO / fps_root / 'stratified_s0' / 'fps_meta.json'))['mode']}_s0.xyz"
     for s in args.seeds:
-        rows.append(("E3_full", "none", 1.0, s, args.data, f"{model_root}/E3_full/seed{s}"))
+        rows.append(("E3_full", "none", 1.0, s, full_xyz, f"{model_root}/E3_full/seed{s}"))
     if args.matched_fraction:
         for sel in ("global_s0", "stratified_s0"):
             mask_cmds.setdefault(sel, set()).add(args.matched_fraction)
@@ -105,6 +107,8 @@ def main():
             fl = " ".join(f"{f:.3f}" for f in sorted(fracs))
             fh.write(f"python pruning/make_masks.py $DATA {fps_root}/{sel} {pruned_root}/{sel} "
                      f"--fractions {fl} --drop-descriptors\n")
+        fh.write(f"python pruning/make_masks.py $DATA {fps_root}/stratified_s0 {pruned_root}/full "
+                 f"--fractions 1.000 --drop-descriptors\n")
         for label, path in budgets:
             fh.write(f"python pruning/make_masks.py $DATA {fps_root}/stratified_s0 {pruned_root}/adaptive_{label}_s0 "
                      f"--budget {path} --drop-descriptors\n")

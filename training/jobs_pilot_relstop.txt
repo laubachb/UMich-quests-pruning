@@ -1,0 +1,4 @@
+training/train_one.sh results/ext/sio2/pruned/stratified_s0/train_0.050_stratified_s0.xyz 0 /scratch/09982/blaubach/UMich-quests-pruning-models/pilot_relstop/sio2_stratified_f0.050_seed0 gpu Si,O
+training/train_one.sh results/ext/sio2/pruned/global_s0/train_0.050_global_s0.xyz 0 /scratch/09982/blaubach/UMich-quests-pruning-models/pilot_relstop/sio2_global_f0.050_seed0 gpu Si,O
+training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.050_stratified_s0.xyz 0 /scratch/09982/blaubach/UMich-quests-pruning-models/pilot_relstop/monbtavw_stratified_f0.050_seed0 gpu Mo,Nb,Ta,V,W
+training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.050_stratified_s0.xyz 0 /scratch/09982/blaubach/UMich-quests-pruning-models/pilot_relstop/carbon_stratified_f0.050_seed0 gpu

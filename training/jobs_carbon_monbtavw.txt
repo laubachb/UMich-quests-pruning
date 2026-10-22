@@ -52,9 +52,9 @@ training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.100_strat
 training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_stratified_s1.xyz 0 results/models/E2_fpsseed/stratified_s1/f0.200/seed0 gpu
 training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_stratified_s1.xyz 1 results/models/E2_fpsseed/stratified_s1/f0.200/seed1 gpu
 training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_stratified_s1.xyz 2 results/models/E2_fpsseed/stratified_s1/f0.200/seed2 gpu
-training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 0 results/models/E3_full/seed0 gpu
-training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 1 results/models/E3_full/seed1 gpu
-training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 2 results/models/E3_full/seed2 gpu
+training/train_one.sh results/pruned/full/DS_2km6t3p8hxx2_0_1.000_stratified_s0.xyz 0 results/models/E3_full/seed0 gpu
+training/train_one.sh results/pruned/full/DS_2km6t3p8hxx2_0_1.000_stratified_s0.xyz 1 results/models/E3_full/seed1 gpu
+training/train_one.sh results/pruned/full/DS_2km6t3p8hxx2_0_1.000_stratified_s0.xyz 2 results/models/E3_full/seed2 gpu
 training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0.xyz 0 results/models/E5_matched/global_s0/f0.312/seed0 gpu
 training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0.xyz 1 results/models/E5_matched/global_s0/f0.312/seed1 gpu
 training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0.xyz 2 results/models/E5_matched/global_s0/f0.312/seed2 gpu
@@ -121,9 +121,9 @@ training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.100_stra
 training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.200_stratified_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed0 gpu Mo,Nb,Ta,V,W
 training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.200_stratified_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed1 gpu Mo,Nb,Ta,V,W
 training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.200_stratified_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed2 gpu Mo,Nb,Ta,V,W
-training/train_one.sh data/external/monbtavw/train.xyz 0 results/ext/monbtavw/models/E3_full/seed0 gpu Mo,Nb,Ta,V,W
-training/train_one.sh data/external/monbtavw/train.xyz 1 results/ext/monbtavw/models/E3_full/seed1 gpu Mo,Nb,Ta,V,W
-training/train_one.sh data/external/monbtavw/train.xyz 2 results/ext/monbtavw/models/E3_full/seed2 gpu Mo,Nb,Ta,V,W
+training/train_one.sh results/ext/monbtavw/pruned/full/train_1.000_stratified_s0.xyz 0 results/ext/monbtavw/models/E3_full/seed0 gpu Mo,Nb,Ta,V,W
+training/train_one.sh results/ext/monbtavw/pruned/full/train_1.000_stratified_s0.xyz 1 results/ext/monbtavw/models/E3_full/seed1 gpu Mo,Nb,Ta,V,W
+training/train_one.sh results/ext/monbtavw/pruned/full/train_1.000_stratified_s0.xyz 2 results/ext/monbtavw/models/E3_full/seed2 gpu Mo,Nb,Ta,V,W
 training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.378_global_s0.xyz 0 results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed0 gpu Mo,Nb,Ta,V,W
 training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.378_global_s0.xyz 1 results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed1 gpu Mo,Nb,Ta,V,W
 training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.378_global_s0.xyz 2 results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed2 gpu Mo,Nb,Ta,V,W

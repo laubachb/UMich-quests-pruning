@@ -105,6 +105,17 @@ class LTAULightningModule(EMALightningModule):
     def on_train_epoch_end(self):
         super().on_train_epoch_end()
 
+        # Scale-free early-stopping metric: natural log of the epoch training loss.
+        # The masked loss scales with the retained fraction and the dataset's force
+        # scale, so an absolute min_delta means different things across runs; on the
+        # log, min_delta = 0.01 means "less than ~1% relative improvement".  Only
+        # logged here; it affects training only if a callback is pointed at it.
+        key = f"train_loss_epoch{self.logging_delimiter}weighted_forces_loss"
+        val = self.trainer.callback_metrics.get(key)
+        if val is not None:
+            self.log(f"train_loss_epoch{self.logging_delimiter}log_weighted_forces_loss",
+                     torch.log(torch.as_tensor(val).detach().double().clamp_min(1e-30)))
+
         if self._error_buffer is not None:
             local_errors = self._error_buffer.to(self.device)
             if is_initialized():

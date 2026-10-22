@@ -14,6 +14,9 @@
 # SPECIES     optional comma-separated chemical symbols for multi-element data,
 #             e.g. "Mo,Nb,Ta,V,W" (default: C, as in config.yaml)
 #
+# EXTRA_OVERRIDES (env, optional): further Hydra overrides, e.g.
+#   EXTRA_OVERRIDES="trainer.callbacks.0.min_delta=0.0"   (scale-free early stopping)
+#
 # As in the paper, the same file is used for train/val/test and early stopping
 # monitors the training loss (config.yaml: monitored_metric).
 set -euo pipefail
@@ -35,7 +38,7 @@ fi
     hydra.run.dir="$OUT" "${RESUME[@]}" \
     data.train_file_path="$XYZ" data.val_file_path="$XYZ" data.test_file_path="$XYZ" \
     data.seed="$SEED" training_module.model.seed="$SEED" \
-    trainer.accelerator="$DEVICE" "${SPECIES_OVERRIDE[@]}" \
+    trainer.accelerator="$DEVICE" "${SPECIES_OVERRIDE[@]}" ${EXTRA_OVERRIDES:-} \
     2>&1 | tee train.log
 
 CKPT="$OUT/train_dir/best.ckpt"

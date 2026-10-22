@@ -22,7 +22,10 @@ from pathlib import Path
 
 import numpy as np
 from ase.io import read
-from nequip.integrations.ase import NequIPCalculator
+try:  # nequip >= 0.10
+    from nequip.integrations.ase import NequIPCalculator
+except ImportError:  # nequip 0.9.x (the paper stack, env/venv-paper)
+    from nequip.ase import NequIPCalculator
 
 HARTREE_BOHR_TO_EV_A = 27.211386245988 * 1.8897261246257702  # 51.42208...
 
@@ -39,8 +42,8 @@ def load_test(path, convert):
 
 
 def predict(frames, compiled, device):
-    calc = NequIPCalculator.from_compiled_model(compile_path=str(compiled), device=device,
-                                                species_to_type_name={})
+    # model type names are the chemical symbols for every model in this study
+    calc = NequIPCalculator.from_compiled_model(compile_path=str(compiled), device=device)
     out = []
     for a in frames:
         a.calc = calc
@@ -57,6 +60,9 @@ def main():
     ap.add_argument("--device", default="cpu")
     ap.add_argument("--no-unit-conversion", action="store_true",
                     help="set if the test file's forces are already in eV/A")
+    ap.add_argument("--save-forces", default=None,
+                    help="directory: write each model's predicted test forces (eV/A, float32, test-file atom order) "
+                         "as <model dir path with / -> __>.npy, for the force-tail analysis")
     args = ap.parse_args()
 
     frames, env_group, f_true = load_test(args.test, not args.no_unit_conversion)
@@ -89,6 +95,9 @@ def main():
             w.writeheader()
         for p, meta in jobs:
             f_pred = predict(frames, p, args.device)
+            if args.save_forces:
+                sd = Path(args.save_forces); sd.mkdir(parents=True, exist_ok=True)
+                np.save(sd / (str(p.parent).strip("/").replace("/", "__") + ".npy"), f_pred.astype(np.float32))
             err = np.abs(f_pred - f_true)
             rows = []
             for g in groups + ["Full"]:

@@ -8,4 +8,5 @@ python pruning/make_masks.py $DATA results/ext/monbtavw/fps/random_global_s0 res
 python pruning/make_masks.py $DATA results/ext/monbtavw/fps/random_stratified_s0 results/ext/monbtavw/pruned/random_stratified_s0 --fractions 0.050 0.100 0.200 --drop-descriptors
 python pruning/make_masks.py $DATA results/ext/monbtavw/fps/stratified_s0 results/ext/monbtavw/pruned/stratified_s0 --fractions 0.050 0.100 0.200 0.378 --drop-descriptors
 python pruning/make_masks.py $DATA results/ext/monbtavw/fps/stratified_s1 results/ext/monbtavw/pruned/stratified_s1 --fractions 0.050 0.100 0.200 --drop-descriptors
+python pruning/make_masks.py $DATA results/ext/monbtavw/fps/stratified_s0 results/ext/monbtavw/pruned/full --fractions 1.000 --drop-descriptors
 python pruning/make_masks.py $DATA results/ext/monbtavw/fps/stratified_s0 results/ext/monbtavw/pruned/adaptive_midlo_s0 --budget results/ext/monbtavw/funiq/groups_s0/budget_mid_lo.json --drop-descriptors

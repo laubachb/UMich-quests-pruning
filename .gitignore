@@ -38,3 +38,6 @@ results/slurm/smoke-*.out
 # the adaptive budgets' summaries are kept as committed overall-retention records
 results/ext/*/pruned/*
 !results/ext/*/pruned/adaptive_*/
+!results/baselines/**/*.npy
+results/models_relstop
+results/ext/*/models_relstop

@@ -1,0 +1,8 @@
+684 frames, 134720 environments, d=63 (4s)
+  MSC: per-frame entropies (14s)
+/work2/09982/blaubach/stampede3/UMich-quests-pruning/env/venv-select/lib/python3.12/site-packages/quests/compression/fps.py:129: RuntimeWarning: divide by zero encountered in log
+  per_struct_dH = -np.log(per_struct_kernels)
+  MSC: ordered 212 frames (31s)
+f=0.050: 6760/134720 envs (budget 6736), 50 frames -> results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.050_msc.xyz
+f=0.100: 13480/134720 envs (budget 13472), 90 frames -> results/pruned/baseline_msc/DS_2km6t3p8hxx2_0_0.100_msc.xyz
+done (75s) -> results/baselines/msc

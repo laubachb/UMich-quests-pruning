@@ -1,0 +1,278 @@
+host=c561-006.stampede3.tacc.utexas.edu nodes=2 jobs=training/jobs_carbon_monbtavw.txt lines=135 gpus/node=4 start=Mon Oct 12 09:13:52 PM CDT 2026
+name, memory.total [MiB]
+NVIDIA H100, 95830 MiB
+NVIDIA H100, 95830 MiB
+NVIDIA H100, 95830 MiB
+NVIDIA H100, 95830 MiB
+cuda ok 4 GPUs; nequip 0.9.1
+[w3] 2026-10-12_21:15:19 start line 3: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.100_global_s0.xyz 0 results/models/E1_method/global_s0/f0.100/seed0 gpu
+[w2] 2026-10-12_21:15:19 start line 2: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.050_global_s0.xyz 2 results/models/E1_method/global_s0/f0.050/seed2 gpu
+[w0] 2026-10-12_21:15:19 start line 0: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.050_global_s0.xyz 0 results/models/E1_method/global_s0/f0.050/seed0 gpu
+[w1] 2026-10-12_21:15:19 start line 1: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.050_global_s0.xyz 1 results/models/E1_method/global_s0/f0.050/seed1 gpu
+[w6] 2026-10-12_21:15:19 start line 6: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.200_global_s0.xyz 0 results/models/E1_method/global_s0/f0.200/seed0 gpu
+[w7] 2026-10-12_21:15:19 start line 7: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.200_global_s0.xyz 1 results/models/E1_method/global_s0/f0.200/seed1 gpu
+[w4] 2026-10-12_21:15:19 start line 4: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.100_global_s0.xyz 1 results/models/E1_method/global_s0/f0.100/seed1 gpu
+[w5] 2026-10-12_21:15:19 start line 5: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.100_global_s0.xyz 2 results/models/E1_method/global_s0/f0.100/seed2 gpu
+[w2] 2026-10-12_21:35:32 OK   results/models/E1_method/global_s0/f0.050/seed2
+[w2] 2026-10-12_21:35:32 start line 10: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.050_stratified_s0.xyz 1 results/models/E1_method/stratified_s0/f0.050/seed1 gpu
+[w0] 2026-10-12_21:38:31 OK   results/models/E1_method/global_s0/f0.050/seed0
+[w0] 2026-10-12_21:38:31 start line 8: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.200_global_s0.xyz 2 results/models/E1_method/global_s0/f0.200/seed2 gpu
+[w5] 2026-10-12_21:39:38 OK   results/models/E1_method/global_s0/f0.100/seed2
+[w5] 2026-10-12_21:39:38 start line 13: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.100_stratified_s0.xyz 1 results/models/E1_method/stratified_s0/f0.100/seed1 gpu
+[w1] 2026-10-12_21:40:02 OK   results/models/E1_method/global_s0/f0.050/seed1
+[w1] 2026-10-12_21:40:02 start line 9: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.050_stratified_s0.xyz 0 results/models/E1_method/stratified_s0/f0.050/seed0 gpu
+[w3] 2026-10-12_21:42:48 OK   results/models/E1_method/global_s0/f0.100/seed0
+[w3] 2026-10-12_21:42:48 start line 11: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.050_stratified_s0.xyz 2 results/models/E1_method/stratified_s0/f0.050/seed2 gpu
+[w6] 2026-10-12_21:44:17 OK   results/models/E1_method/global_s0/f0.200/seed0
+[w6] 2026-10-12_21:44:17 start line 14: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.100_stratified_s0.xyz 2 results/models/E1_method/stratified_s0/f0.100/seed2 gpu
+[w4] 2026-10-12_21:45:17 OK   results/models/E1_method/global_s0/f0.100/seed1
+[w4] 2026-10-12_21:45:17 start line 12: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.100_stratified_s0.xyz 0 results/models/E1_method/stratified_s0/f0.100/seed0 gpu
+[w7] 2026-10-12_21:50:40 OK   results/models/E1_method/global_s0/f0.200/seed1
+[w7] 2026-10-12_21:50:40 start line 15: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.200_stratified_s0.xyz 0 results/models/E1_method/stratified_s0/f0.200/seed0 gpu
+[w2] 2026-10-12_21:56:54 OK   results/models/E1_method/stratified_s0/f0.050/seed1
+[w2] 2026-10-12_21:56:54 start line 18: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.050_random_global_s0.xyz 0 results/models/E1_method/random_global_s0/f0.050/seed0 gpu
+[w1] 2026-10-12_21:58:28 OK   results/models/E1_method/stratified_s0/f0.050/seed0
+[w1] 2026-10-12_21:58:28 start line 17: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.200_stratified_s0.xyz 2 results/models/E1_method/stratified_s0/f0.200/seed2 gpu
+[w5] 2026-10-12_21:59:51 OK   results/models/E1_method/stratified_s0/f0.100/seed1
+[w5] 2026-10-12_21:59:51 start line 21: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.100_random_global_s0.xyz 0 results/models/E1_method/random_global_s0/f0.100/seed0 gpu
+[w3] 2026-10-12_22:05:19 OK   results/models/E1_method/stratified_s0/f0.050/seed2
+[w3] 2026-10-12_22:05:19 start line 19: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.050_random_global_s0.xyz 1 results/models/E1_method/random_global_s0/f0.050/seed1 gpu
+[w6] 2026-10-12_22:06:45 OK   results/models/E1_method/stratified_s0/f0.100/seed2
+[w6] 2026-10-12_22:06:45 start line 22: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.100_random_global_s0.xyz 1 results/models/E1_method/random_global_s0/f0.100/seed1 gpu
+[w4] 2026-10-12_22:07:41 OK   results/models/E1_method/stratified_s0/f0.100/seed0
+[w4] 2026-10-12_22:07:41 start line 20: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.050_random_global_s0.xyz 2 results/models/E1_method/random_global_s0/f0.050/seed2 gpu
+[w0] 2026-10-12_22:12:33 OK   results/models/E1_method/global_s0/f0.200/seed2
+[w0] 2026-10-12_22:12:33 start line 16: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.200_stratified_s0.xyz 1 results/models/E1_method/stratified_s0/f0.200/seed1 gpu
+[w2] 2026-10-12_22:15:29 OK   results/models/E1_method/random_global_s0/f0.050/seed0
+[w2] 2026-10-12_22:15:29 start line 26: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.200_random_global_s0.xyz 2 results/models/E1_method/random_global_s0/f0.200/seed2 gpu
+[w1] 2026-10-12_22:21:02 OK   results/models/E1_method/stratified_s0/f0.200/seed2
+[w1] 2026-10-12_22:21:02 start line 25: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.200_random_global_s0.xyz 1 results/models/E1_method/random_global_s0/f0.200/seed1 gpu
+[w7] 2026-10-12_22:21:54 OK   results/models/E1_method/stratified_s0/f0.200/seed0
+[w7] 2026-10-12_22:21:54 start line 23: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.100_random_global_s0.xyz 2 results/models/E1_method/random_global_s0/f0.100/seed2 gpu
+[w3] 2026-10-12_22:22:46 OK   results/models/E1_method/random_global_s0/f0.050/seed1
+[w3] 2026-10-12_22:22:46 start line 27: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.050_random_stratified_s0.xyz 0 results/models/E1_method/random_stratified_s0/f0.050/seed0 gpu
+[w5] 2026-10-12_22:24:15 OK   results/models/E1_method/random_global_s0/f0.100/seed0
+[w5] 2026-10-12_22:24:15 start line 29: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.050_random_stratified_s0.xyz 2 results/models/E1_method/random_stratified_s0/f0.050/seed2 gpu
+[w6] 2026-10-12_22:27:26 OK   results/models/E1_method/random_global_s0/f0.100/seed1
+[w6] 2026-10-12_22:27:26 start line 30: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.100_random_stratified_s0.xyz 0 results/models/E1_method/random_stratified_s0/f0.100/seed0 gpu
+[w4] 2026-10-12_22:30:51 OK   results/models/E1_method/random_global_s0/f0.050/seed2
+[w4] 2026-10-12_22:30:51 start line 28: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.050_random_stratified_s0.xyz 1 results/models/E1_method/random_stratified_s0/f0.050/seed1 gpu
+[w0] 2026-10-12_22:32:28 OK   results/models/E1_method/stratified_s0/f0.200/seed1
+[w0] 2026-10-12_22:32:28 start line 24: training/train_one.sh results/pruned/random_global_s0/DS_2km6t3p8hxx2_0_0.200_random_global_s0.xyz 0 results/models/E1_method/random_global_s0/f0.200/seed0 gpu
+[w2] 2026-10-12_22:35:59 OK   results/models/E1_method/random_global_s0/f0.200/seed2
+[w2] 2026-10-12_22:35:59 start line 34: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz 1 results/models/E1_method/random_stratified_s0/f0.200/seed1 gpu
+[w7] 2026-10-12_22:43:33 OK   results/models/E1_method/random_global_s0/f0.100/seed2
+[w7] 2026-10-12_22:43:33 start line 31: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.100_random_stratified_s0.xyz 1 results/models/E1_method/random_stratified_s0/f0.100/seed1 gpu
+[w5] 2026-10-12_22:44:42 OK   results/models/E1_method/random_stratified_s0/f0.050/seed2
+[w5] 2026-10-12_22:44:42 start line 37: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz 1 results/models/E2_fpsseed/global_s1/f0.050/seed1 gpu
+[w1] 2026-10-12_22:44:58 OK   results/models/E1_method/random_global_s0/f0.200/seed1
+[w1] 2026-10-12_22:44:58 start line 33: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz 0 results/models/E1_method/random_stratified_s0/f0.200/seed0 gpu
+[w3] 2026-10-12_22:47:42 OK   results/models/E1_method/random_stratified_s0/f0.050/seed0
+[w3] 2026-10-12_22:47:42 start line 35: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.200_random_stratified_s0.xyz 2 results/models/E1_method/random_stratified_s0/f0.200/seed2 gpu
+[w6] 2026-10-12_22:48:44 OK   results/models/E1_method/random_stratified_s0/f0.100/seed0
+[w6] 2026-10-12_22:48:44 start line 38: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz 2 results/models/E2_fpsseed/global_s1/f0.050/seed2 gpu
+[w4] 2026-10-12_22:51:02 OK   results/models/E1_method/random_stratified_s0/f0.050/seed1
+[w4] 2026-10-12_22:51:02 start line 36: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.050_global_s1.xyz 0 results/models/E2_fpsseed/global_s1/f0.050/seed0 gpu
+[w0] 2026-10-12_23:00:01 OK   results/models/E1_method/random_global_s0/f0.200/seed0
+[w0] 2026-10-12_23:00:01 start line 32: training/train_one.sh results/pruned/random_stratified_s0/DS_2km6t3p8hxx2_0_0.100_random_stratified_s0.xyz 2 results/models/E1_method/random_stratified_s0/f0.100/seed2 gpu
+[w2] 2026-10-12_23:02:00 OK   results/models/E1_method/random_stratified_s0/f0.200/seed1
+[w2] 2026-10-12_23:02:00 start line 42: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz 0 results/models/E2_fpsseed/global_s1/f0.200/seed0 gpu
+[w7] 2026-10-12_23:04:52 OK   results/models/E1_method/random_stratified_s0/f0.100/seed1
+[w7] 2026-10-12_23:04:52 start line 39: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz 0 results/models/E2_fpsseed/global_s1/f0.100/seed0 gpu
+[w3] 2026-10-12_23:08:38 OK   results/models/E1_method/random_stratified_s0/f0.200/seed2
+[w3] 2026-10-12_23:08:38 start line 43: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz 1 results/models/E2_fpsseed/global_s1/f0.200/seed1 gpu
+[w5] 2026-10-12_23:08:46 OK   results/models/E2_fpsseed/global_s1/f0.050/seed1
+[w5] 2026-10-12_23:08:46 start line 45: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz 0 results/models/E2_fpsseed/stratified_s1/f0.050/seed0 gpu
+[w6] 2026-10-12_23:11:26 OK   results/models/E2_fpsseed/global_s1/f0.050/seed2
+[w6] 2026-10-12_23:11:26 start line 46: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz 1 results/models/E2_fpsseed/stratified_s1/f0.050/seed1 gpu
+[w4] 2026-10-12_23:13:39 OK   results/models/E2_fpsseed/global_s1/f0.050/seed0
+[w4] 2026-10-12_23:13:39 start line 44: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.200_global_s1.xyz 2 results/models/E2_fpsseed/global_s1/f0.200/seed2 gpu
+[w1] 2026-10-12_23:14:05 OK   results/models/E1_method/random_stratified_s0/f0.200/seed0
+[w1] 2026-10-12_23:14:05 start line 41: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz 2 results/models/E2_fpsseed/global_s1/f0.100/seed2 gpu
+[w0] 2026-10-12_23:24:38 OK   results/models/E1_method/random_stratified_s0/f0.100/seed2
+[w0] 2026-10-12_23:24:38 start line 40: training/train_one.sh results/pruned/global_s1/DS_2km6t3p8hxx2_0_0.100_global_s1.xyz 1 results/models/E2_fpsseed/global_s1/f0.100/seed1 gpu
+[w5] 2026-10-12_23:28:12 OK   results/models/E2_fpsseed/stratified_s1/f0.050/seed0
+[w5] 2026-10-12_23:28:12 start line 53: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_stratified_s1.xyz 2 results/models/E2_fpsseed/stratified_s1/f0.200/seed2 gpu
+[w2] 2026-10-12_23:29:53 OK   results/models/E2_fpsseed/global_s1/f0.200/seed0
+[w2] 2026-10-12_23:29:53 start line 50: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.100_stratified_s1.xyz 2 results/models/E2_fpsseed/stratified_s1/f0.100/seed2 gpu
+[w6] 2026-10-12_23:32:24 OK   results/models/E2_fpsseed/stratified_s1/f0.050/seed1
+[w6] 2026-10-12_23:32:24 start line 54: training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 0 results/models/E3_full/seed0 gpu
+[w6] 2026-10-12_23:32:24 FAIL results/models/E3_full/seed0 (see results/models/E3_full/seed0/worker.log)
+[w6] 2026-10-12_23:32:24 start line 62: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.312_stratified_s0.xyz 2 results/models/E5_matched/stratified_s0/f0.312/seed2 gpu
+[w7] 2026-10-12_23:33:19 OK   results/models/E2_fpsseed/global_s1/f0.100/seed0
+[w7] 2026-10-12_23:33:19 start line 47: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.050_stratified_s1.xyz 2 results/models/E2_fpsseed/stratified_s1/f0.050/seed2 gpu
+[w3] 2026-10-12_23:33:46 OK   results/models/E2_fpsseed/global_s1/f0.200/seed1
+[w3] 2026-10-12_23:33:46 start line 51: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_stratified_s1.xyz 0 results/models/E2_fpsseed/stratified_s1/f0.200/seed0 gpu
+[w1] 2026-10-12_23:37:04 OK   results/models/E2_fpsseed/global_s1/f0.100/seed2
+[w1] 2026-10-12_23:37:04 start line 49: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.100_stratified_s1.xyz 1 results/models/E2_fpsseed/stratified_s1/f0.100/seed1 gpu
+[w4] 2026-10-12_23:41:32 OK   results/models/E2_fpsseed/global_s1/f0.200/seed2
+[w4] 2026-10-12_23:41:32 start line 52: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.200_stratified_s1.xyz 1 results/models/E2_fpsseed/stratified_s1/f0.200/seed1 gpu
+[w5] 2026-10-12_23:53:18 OK   results/models/E2_fpsseed/stratified_s1/f0.200/seed2
+[w5] 2026-10-12_23:53:18 start line 61: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.312_stratified_s0.xyz 1 results/models/E5_matched/stratified_s0/f0.312/seed1 gpu
+[w7] 2026-10-12_23:53:52 OK   results/models/E2_fpsseed/stratified_s1/f0.050/seed2
+[w7] 2026-10-12_23:53:52 start line 55: training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 1 results/models/E3_full/seed1 gpu
+[w7] 2026-10-12_23:53:52 FAIL results/models/E3_full/seed1 (see results/models/E3_full/seed1/worker.log)
+[w7] 2026-10-12_23:53:52 start line 63: training/train_one.sh results/pruned/adaptive_paper_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 0 results/models/E4_adaptive_paper/seed0 gpu
+[w0] 2026-10-12_23:53:55 OK   results/models/E2_fpsseed/global_s1/f0.100/seed1
+[w0] 2026-10-12_23:53:55 start line 48: training/train_one.sh results/pruned/stratified_s1/DS_2km6t3p8hxx2_0_0.100_stratified_s1.xyz 0 results/models/E2_fpsseed/stratified_s1/f0.100/seed0 gpu
+[w2] 2026-10-12_23:53:56 OK   results/models/E2_fpsseed/stratified_s1/f0.100/seed2
+[w2] 2026-10-12_23:53:56 start line 58: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0.xyz 1 results/models/E5_matched/global_s0/f0.312/seed1 gpu
+[w1] 2026-10-12_23:57:10 OK   results/models/E2_fpsseed/stratified_s1/f0.100/seed1
+[w1] 2026-10-12_23:57:10 start line 57: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0.xyz 0 results/models/E5_matched/global_s0/f0.312/seed0 gpu
+[w6] 2026-10-13_00:00:28 OK   results/models/E5_matched/stratified_s0/f0.312/seed2
+[w6] 2026-10-13_00:00:28 start line 70: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.050_global_s0.xyz 1 results/ext/monbtavw/models/E1_method/global_s0/f0.050/seed1 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_00:02:03 OK   results/models/E2_fpsseed/stratified_s1/f0.200/seed1
+[w4] 2026-10-13_00:02:03 start line 60: training/train_one.sh results/pruned/stratified_s0/DS_2km6t3p8hxx2_0_0.312_stratified_s0.xyz 0 results/models/E5_matched/stratified_s0/f0.312/seed0 gpu
+[w3] 2026-10-13_00:03:11 OK   results/models/E2_fpsseed/stratified_s1/f0.200/seed0
+[w3] 2026-10-13_00:03:11 start line 59: training/train_one.sh results/pruned/global_s0/DS_2km6t3p8hxx2_0_0.312_global_s0.xyz 2 results/models/E5_matched/global_s0/f0.312/seed2 gpu
+[w5] 2026-10-13_00:25:54 OK   results/models/E5_matched/stratified_s0/f0.312/seed1
+[w5] 2026-10-13_00:25:54 start line 69: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.050_global_s0.xyz 0 results/ext/monbtavw/models/E1_method/global_s0/f0.050/seed0 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_00:25:54 OK   results/models/E4_adaptive_paper/seed0
+[w7] 2026-10-13_00:25:54 start line 71: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.050_global_s0.xyz 2 results/ext/monbtavw/models/E1_method/global_s0/f0.050/seed2 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_00:26:11 OK   results/models/E5_matched/global_s0/f0.312/seed0
+[w1] 2026-10-13_00:26:11 start line 65: training/train_one.sh results/pruned/adaptive_paper_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 2 results/models/E4_adaptive_paper/seed2 gpu
+[w0] 2026-10-13_00:26:11 OK   results/models/E2_fpsseed/stratified_s1/f0.100/seed0
+[w0] 2026-10-13_00:26:11 start line 56: training/train_one.sh /p/lustre1/laubach2/nequip_models/quests_descriptors-Mar2026/DS_2km6t3p8hxx2_0.xyz 2 results/models/E3_full/seed2 gpu
+[w0] 2026-10-13_00:26:11 FAIL results/models/E3_full/seed2 (see results/models/E3_full/seed2/worker.log)
+[w0] 2026-10-13_00:26:11 start line 64: training/train_one.sh results/pruned/adaptive_paper_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 1 results/models/E4_adaptive_paper/seed1 gpu
+[w2] 2026-10-13_00:29:13 OK   results/models/E5_matched/global_s0/f0.312/seed1
+[w2] 2026-10-13_00:29:13 start line 66: training/train_one.sh results/pruned/adaptive_midlo_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 0 results/models/E4_adaptive_midlo/seed0 gpu
+[w4] 2026-10-13_00:31:30 OK   results/models/E5_matched/stratified_s0/f0.312/seed0
+[w4] 2026-10-13_00:31:30 start line 68: training/train_one.sh results/pruned/adaptive_midlo_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 2 results/models/E4_adaptive_midlo/seed2 gpu
+[w3] 2026-10-13_00:33:22 OK   results/models/E5_matched/global_s0/f0.312/seed2
+[w3] 2026-10-13_00:33:22 start line 67: training/train_one.sh results/pruned/adaptive_midlo_s0/DS_2km6t3p8hxx2_0_adaptive_stratified_s0.xyz 1 results/models/E4_adaptive_midlo/seed1 gpu
+[w6] 2026-10-13_00:40:20 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.050/seed1
+[w6] 2026-10-13_00:40:20 start line 78: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.050_stratified_s0.xyz 0 results/ext/monbtavw/models/E1_method/stratified_s0/f0.050/seed0 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_00:54:37 OK   results/models/E4_adaptive_paper/seed2
+[w1] 2026-10-13_00:54:37 start line 73: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.100_global_s0.xyz 1 results/ext/monbtavw/models/E1_method/global_s0/f0.100/seed1 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_00:57:28 OK   results/models/E4_adaptive_paper/seed1
+[w0] 2026-10-13_00:57:28 start line 72: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.100_global_s0.xyz 0 results/ext/monbtavw/models/E1_method/global_s0/f0.100/seed0 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_00:58:21 OK   results/models/E4_adaptive_midlo/seed0
+[w2] 2026-10-13_00:58:21 start line 74: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.100_global_s0.xyz 2 results/ext/monbtavw/models/E1_method/global_s0/f0.100/seed2 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_01:02:50 OK   results/models/E4_adaptive_midlo/seed1
+[w3] 2026-10-13_01:02:50 start line 75: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.200_global_s0.xyz 0 results/ext/monbtavw/models/E1_method/global_s0/f0.200/seed0 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_01:06:36 OK   results/models/E4_adaptive_midlo/seed2
+[w4] 2026-10-13_01:06:36 start line 76: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.200_global_s0.xyz 1 results/ext/monbtavw/models/E1_method/global_s0/f0.200/seed1 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_01:06:36 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.050/seed2
+[w7] 2026-10-13_01:06:36 start line 79: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.050_stratified_s0.xyz 1 results/ext/monbtavw/models/E1_method/stratified_s0/f0.050/seed1 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_01:07:15 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.050/seed0
+[w5] 2026-10-13_01:07:15 start line 77: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.200_global_s0.xyz 2 results/ext/monbtavw/models/E1_method/global_s0/f0.200/seed2 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_01:15:40 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.050/seed0
+[w6] 2026-10-13_01:15:40 start line 86: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.200_stratified_s0.xyz 2 results/ext/monbtavw/models/E1_method/stratified_s0/f0.200/seed2 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_01:39:15 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.100/seed1
+[w1] 2026-10-13_01:39:15 start line 81: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.100_stratified_s0.xyz 0 results/ext/monbtavw/models/E1_method/stratified_s0/f0.100/seed0 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_01:40:34 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.100/seed2
+[w2] 2026-10-13_01:40:34 start line 82: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.100_stratified_s0.xyz 1 results/ext/monbtavw/models/E1_method/stratified_s0/f0.100/seed1 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_01:42:23 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.100/seed0
+[w0] 2026-10-13_01:42:23 start line 80: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.050_stratified_s0.xyz 2 results/ext/monbtavw/models/E1_method/stratified_s0/f0.050/seed2 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_01:43:11 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.050/seed1
+[w7] 2026-10-13_01:43:11 start line 87: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.050_random_global_s0.xyz 0 results/ext/monbtavw/models/E1_method/random_global_s0/f0.050/seed0 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_01:46:46 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.200/seed0
+[w3] 2026-10-13_01:46:46 start line 83: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.100_stratified_s0.xyz 2 results/ext/monbtavw/models/E1_method/stratified_s0/f0.100/seed2 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_01:57:13 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.200/seed1
+[w4] 2026-10-13_01:57:13 start line 84: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.200_stratified_s0.xyz 0 results/ext/monbtavw/models/E1_method/stratified_s0/f0.200/seed0 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_02:01:40 OK   results/ext/monbtavw/models/E1_method/global_s0/f0.200/seed2
+[w5] 2026-10-13_02:01:40 start line 85: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.200_stratified_s0.xyz 1 results/ext/monbtavw/models/E1_method/stratified_s0/f0.200/seed1 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_02:04:11 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.200/seed2
+[w6] 2026-10-13_02:04:11 start line 94: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.200_random_global_s0.xyz 1 results/ext/monbtavw/models/E1_method/random_global_s0/f0.200/seed1 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_02:14:42 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.050/seed2
+[w0] 2026-10-13_02:14:42 start line 88: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.050_random_global_s0.xyz 1 results/ext/monbtavw/models/E1_method/random_global_s0/f0.050/seed1 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_02:16:34 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.100/seed1
+[w2] 2026-10-13_02:16:34 start line 90: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.100_random_global_s0.xyz 0 results/ext/monbtavw/models/E1_method/random_global_s0/f0.100/seed0 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_02:17:08 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.100/seed0
+[w1] 2026-10-13_02:17:08 start line 89: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.050_random_global_s0.xyz 2 results/ext/monbtavw/models/E1_method/random_global_s0/f0.050/seed2 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_02:18:11 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.050/seed0
+[w7] 2026-10-13_02:18:11 start line 95: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.200_random_global_s0.xyz 2 results/ext/monbtavw/models/E1_method/random_global_s0/f0.200/seed2 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_02:35:38 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.100/seed2
+[w3] 2026-10-13_02:35:38 start line 91: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.100_random_global_s0.xyz 1 results/ext/monbtavw/models/E1_method/random_global_s0/f0.100/seed1 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_02:42:27 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.050/seed1
+[w0] 2026-10-13_02:42:27 start line 96: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.050_random_stratified_s0.xyz 0 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.050/seed0 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_02:42:57 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.200/seed1
+[w6] 2026-10-13_02:42:57 start line 102: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.200_random_stratified_s0.xyz 0 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.200/seed0 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_02:47:02 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.050/seed2
+[w1] 2026-10-13_02:47:02 start line 97: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.050_random_stratified_s0.xyz 1 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.050/seed1 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_02:47:32 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.200/seed0
+[w4] 2026-10-13_02:47:32 start line 92: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.100_random_global_s0.xyz 2 results/ext/monbtavw/models/E1_method/random_global_s0/f0.100/seed2 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_02:51:13 OK   results/ext/monbtavw/models/E1_method/stratified_s0/f0.200/seed1
+[w5] 2026-10-13_02:51:13 start line 93: training/train_one.sh results/ext/monbtavw/pruned/random_global_s0/train_0.200_random_global_s0.xyz 0 results/ext/monbtavw/models/E1_method/random_global_s0/f0.200/seed0 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_03:03:55 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.200/seed2
+[w7] 2026-10-13_03:03:55 start line 103: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.200_random_stratified_s0.xyz 1 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.200/seed1 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_03:08:35 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.100/seed0
+[w2] 2026-10-13_03:08:35 start line 98: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.050_random_stratified_s0.xyz 2 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.050/seed2 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_03:11:07 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.100/seed1
+[w3] 2026-10-13_03:11:07 start line 99: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.100_random_stratified_s0.xyz 0 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.100/seed0 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_03:12:39 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.050/seed1
+[w1] 2026-10-13_03:12:39 start line 105: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.050_global_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.050/seed0 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_03:17:30 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.050/seed0
+[w0] 2026-10-13_03:17:30 start line 104: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.200_random_stratified_s0.xyz 2 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.200/seed2 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_03:27:29 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.100/seed2
+[w4] 2026-10-13_03:27:29 start line 100: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.100_random_stratified_s0.xyz 1 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.100/seed1 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_03:29:07 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.200/seed0
+[w6] 2026-10-13_03:29:07 start line 110: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.100_global_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.100/seed2 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_03:40:04 OK   results/ext/monbtavw/models/E1_method/random_global_s0/f0.200/seed0
+[w5] 2026-10-13_03:40:04 start line 101: training/train_one.sh results/ext/monbtavw/pruned/random_stratified_s0/train_0.100_random_stratified_s0.xyz 2 results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.100/seed2 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_03:46:38 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.050/seed2
+[w2] 2026-10-13_03:46:38 start line 106: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.050_global_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.050/seed1 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_03:50:21 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.050/seed0
+[w1] 2026-10-13_03:50:21 start line 113: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.200_global_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.200/seed2 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_03:52:30 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.100/seed0
+[w3] 2026-10-13_03:52:30 start line 107: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.050_global_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.050/seed2 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_03:53:42 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.200/seed1
+[w7] 2026-10-13_03:53:42 start line 111: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.200_global_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.200/seed0 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_04:03:42 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.100/seed1
+[w4] 2026-10-13_04:03:42 start line 108: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.100_global_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.100/seed0 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_04:10:48 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.200/seed2
+[w0] 2026-10-13_04:10:48 start line 112: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.200_global_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.200/seed1 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_04:19:08 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.100/seed2
+[w6] 2026-10-13_04:19:08 start line 118: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.100_stratified_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.100/seed1 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_04:20:11 OK   results/ext/monbtavw/models/E1_method/random_stratified_s0/f0.100/seed2
+[w5] 2026-10-13_04:20:11 start line 109: training/train_one.sh results/ext/monbtavw/pruned/global_s1/train_0.100_global_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.100/seed1 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_04:31:52 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.050/seed1
+[w2] 2026-10-13_04:31:52 start line 114: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.050_stratified_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.050/seed0 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_04:41:57 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.050/seed2
+[w3] 2026-10-13_04:41:57 start line 115: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.050_stratified_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.050/seed1 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_04:43:07 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.200/seed2
+[w1] 2026-10-13_04:43:07 start line 121: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.200_stratified_s1.xyz 1 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed1 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_04:45:38 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.100/seed0
+[w4] 2026-10-13_04:45:38 start line 116: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.050_stratified_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.050/seed2 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_04:46:11 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.200/seed0
+[w7] 2026-10-13_04:46:11 start line 119: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.100_stratified_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.100/seed2 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_04:58:38 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.100/seed1
+[w6] 2026-10-13_04:58:38 start line 126: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.378_global_s0.xyz 0 results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed0 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_05:02:24 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.200/seed1
+[w0] 2026-10-13_05:02:24 start line 120: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.200_stratified_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed0 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_05:03:18 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.050/seed0
+[w2] 2026-10-13_05:03:18 start line 122: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.200_stratified_s1.xyz 2 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed2 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_05:08:34 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.050/seed1
+[w3] 2026-10-13_05:08:34 start line 123: training/train_one.sh data/external/monbtavw/train.xyz 0 results/ext/monbtavw/models/E3_full/seed0 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_05:08:53 FAIL results/ext/monbtavw/models/E3_full/seed0 (see results/ext/monbtavw/models/E3_full/seed0/worker.log)
+[w3] 2026-10-13_05:08:53 start line 131: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.378_stratified_s0.xyz 2 results/ext/monbtavw/models/E5_matched/stratified_s0/f0.378/seed2 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_05:20:22 OK   results/ext/monbtavw/models/E2_fpsseed/global_s1/f0.100/seed1
+[w5] 2026-10-13_05:20:22 start line 117: training/train_one.sh results/ext/monbtavw/pruned/stratified_s1/train_0.100_stratified_s1.xyz 0 results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.100/seed0 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_05:21:52 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.050/seed2
+[w4] 2026-10-13_05:21:52 start line 124: training/train_one.sh data/external/monbtavw/train.xyz 1 results/ext/monbtavw/models/E3_full/seed1 gpu Mo,Nb,Ta,V,W
+[w4] 2026-10-13_05:22:10 FAIL results/ext/monbtavw/models/E3_full/seed1 (see results/ext/monbtavw/models/E3_full/seed1/worker.log)
+[w4] 2026-10-13_05:22:10 start line 132: training/train_one.sh results/ext/monbtavw/pruned/adaptive_midlo_s0/train_adaptive_stratified_s0.xyz 0 results/ext/monbtavw/models/E4_adaptive_midlo/seed0 gpu Mo,Nb,Ta,V,W
+[w1] 2026-10-13_05:24:47 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed1
+[w1] 2026-10-13_05:24:47 start line 129: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.378_stratified_s0.xyz 0 results/ext/monbtavw/models/E5_matched/stratified_s0/f0.378/seed0 gpu Mo,Nb,Ta,V,W
+[w7] 2026-10-13_05:27:35 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.100/seed2
+[w7] 2026-10-13_05:27:35 start line 127: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.378_global_s0.xyz 1 results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed1 gpu Mo,Nb,Ta,V,W
+[w2] 2026-10-13_05:48:50 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed2
+[w2] 2026-10-13_05:48:50 start line 130: training/train_one.sh results/ext/monbtavw/pruned/stratified_s0/train_0.378_stratified_s0.xyz 1 results/ext/monbtavw/models/E5_matched/stratified_s0/f0.378/seed1 gpu Mo,Nb,Ta,V,W
+[w0] 2026-10-13_05:53:33 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.200/seed0
+[w0] 2026-10-13_05:53:33 start line 128: training/train_one.sh results/ext/monbtavw/pruned/global_s0/train_0.378_global_s0.xyz 2 results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed2 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_05:58:28 OK   results/ext/monbtavw/models/E2_fpsseed/stratified_s1/f0.100/seed0
+[w5] 2026-10-13_05:58:28 start line 125: training/train_one.sh data/external/monbtavw/train.xyz 2 results/ext/monbtavw/models/E3_full/seed2 gpu Mo,Nb,Ta,V,W
+[w6] 2026-10-13_05:58:28 OK   results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed0
+[w6] 2026-10-13_05:58:28 start line 134: training/train_one.sh results/ext/monbtavw/pruned/adaptive_midlo_s0/train_adaptive_stratified_s0.xyz 2 results/ext/monbtavw/models/E4_adaptive_midlo/seed2 gpu Mo,Nb,Ta,V,W
+[w5] 2026-10-13_05:58:59 FAIL results/ext/monbtavw/models/E3_full/seed2 (see results/ext/monbtavw/models/E3_full/seed2/worker.log)
+[w5] 2026-10-13_05:58:59 start line 133: training/train_one.sh results/ext/monbtavw/pruned/adaptive_midlo_s0/train_adaptive_stratified_s0.xyz 1 results/ext/monbtavw/models/E4_adaptive_midlo/seed1 gpu Mo,Nb,Ta,V,W
+[w3] 2026-10-13_06:01:33 OK   results/ext/monbtavw/models/E5_matched/stratified_s0/f0.378/seed2
+[w7] 2026-10-13_06:17:00 OK   results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed1
+[w1] 2026-10-13_06:17:36 OK   results/ext/monbtavw/models/E5_matched/stratified_s0/f0.378/seed0
+[w4] 2026-10-13_06:27:48 OK   results/ext/monbtavw/models/E4_adaptive_midlo/seed0
+[w5] 2026-10-13_06:47:21 OK   results/ext/monbtavw/models/E4_adaptive_midlo/seed1
+[w0] 2026-10-13_06:50:01 OK   results/ext/monbtavw/models/E5_matched/global_s0/f0.378/seed2
+[w2] 2026-10-13_06:52:36 OK   results/ext/monbtavw/models/E5_matched/stratified_s0/f0.378/seed1
+[w6] 2026-10-13_06:54:22 OK   results/ext/monbtavw/models/E4_adaptive_midlo/seed2
+all workers finished Tue Oct 13 06:54:22 AM CDT 2026

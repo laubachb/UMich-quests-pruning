@@ -1,0 +1,12 @@
+684 frames, 134720 environments, d=63 (4s)
+  DIRECT: 3 PCs (Kaiser), 94.4% variance
+/work2/09982/blaubach/stampede3/UMich-quests-pruning/env/venv-select/lib/python3.12/site-packages/sklearn/cluster/_birch.py:711: ConvergenceWarning: Number of subclusters found (46) by BIRCH is less than (6736). Decrease the threshold.
+  warnings.warn(
+  DIRECT: 46 clusters < 6736; threshold -> 0.00341
+  DIRECT: 3 PCs (Kaiser), 94.4% variance
+/work2/09982/blaubach/stampede3/UMich-quests-pruning/env/venv-select/lib/python3.12/site-packages/sklearn/cluster/_birch.py:711: ConvergenceWarning: Number of subclusters found (46) by BIRCH is less than (13472). Decrease the threshold.
+  warnings.warn(
+  DIRECT: 46 clusters < 13472; threshold -> 0.00171
+f=0.050: 6736/134720 envs (budget 6736), 628 frames -> results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.050_direct.xyz
+f=0.100: 13472/134720 envs (budget 13472), 656 frames -> results/pruned/baseline_direct/DS_2km6t3p8hxx2_0_0.100_direct.xyz
+done (602s) -> results/baselines/direct

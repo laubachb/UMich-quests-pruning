@@ -1,0 +1,27 @@
+{
+ "method": "msc",
+ "xyz": "data/DS_2km6t3p8hxx2_0.xyz",
+ "n_env": 134720,
+ "n_frames": 684,
+ "quests_commit": "29e4a405e9266a4be071d9b1c0790844286fbe8f",
+ "maml_commit": "8916c6ea05ff19a1b351bd2b8f11e210750ba032",
+ "fractions": {
+  "0.050": {
+   "budget": 6736,
+   "frames_selected": 50,
+   "n_selected": 6760,
+   "actual_fraction": 0.05017814726840855,
+   "frames_with_selection": 50
+  },
+  "0.100": {
+   "budget": 13472,
+   "frames_selected": 90,
+   "n_selected": 13480,
+   "actual_fraction": 0.10005938242280285,
+   "frames_with_selection": 90
+  }
+ },
+ "h": 0.015,
+ "seconds_ordering": 68,
+ "seconds_total": 75
+}

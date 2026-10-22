@@ -1,0 +1,30 @@
+{
+ "method": "cur",
+ "xyz": "data/DS_2km6t3p8hxx2_0.xyz",
+ "n_env": 134720,
+ "n_frames": 684,
+ "quests_commit": "29e4a405e9266a4be071d9b1c0790844286fbe8f",
+ "maml_commit": "8916c6ea05ff19a1b351bd2b8f11e210750ba032",
+ "fractions": {
+  "0.050": {
+   "budget": 6736,
+   "frames_selected": 42,
+   "frames_beyond_rank": 0,
+   "n_selected": 6672,
+   "actual_fraction": 0.049524940617577194,
+   "frames_with_selection": 42
+  },
+  "0.100": {
+   "budget": 13472,
+   "frames_selected": 101,
+   "frames_beyond_rank": 0,
+   "n_selected": 13472,
+   "actual_fraction": 0.1,
+   "frames_with_selection": 101
+  }
+ },
+ "fingerprint": "mean+std of frame QUESTS descriptors, standardised",
+ "fingerprint_rank": 126,
+ "seconds_ordering": 16,
+ "seconds_total": 23
+}

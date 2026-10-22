@@ -1,0 +1,35 @@
+{
+ "method": "direct",
+ "xyz": "data/DS_2km6t3p8hxx2_0.xyz",
+ "n_env": 134720,
+ "n_frames": 684,
+ "quests_commit": "29e4a405e9266a4be071d9b1c0790844286fbe8f",
+ "maml_commit": "8916c6ea05ff19a1b351bd2b8f11e210750ba032",
+ "fractions": {
+  "0.050": {
+   "budget": 6736,
+   "n_pcs": 3,
+   "pc_variance": 0.9444854941832533,
+   "birch_threshold": 0.0034144893111638956,
+   "n_subclusters": 84557,
+   "n_clusters_nonempty": 6736,
+   "seconds": 223,
+   "n_selected": 6736,
+   "actual_fraction": 0.05,
+   "frames_with_selection": 628
+  },
+  "0.100": {
+   "budget": 13472,
+   "n_pcs": 3,
+   "pc_variance": 0.9444854941832533,
+   "birch_threshold": 0.0017072446555819478,
+   "n_subclusters": 109659,
+   "n_clusters_nonempty": 13472,
+   "seconds": 372,
+   "n_selected": 13472,
+   "actual_fraction": 0.1,
+   "frames_with_selection": 656
+  }
+ },
+ "seconds_total": 602
+}

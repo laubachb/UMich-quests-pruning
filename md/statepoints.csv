@@ -1,0 +1,13 @@
+dir,group,temperature
+300K_diam-pace,diamond_3.68gcc_300,300
+CASE-0_INDEP_0-pace,diamond_3.67gcc_3000,3000
+300K_graph-pace,graphite_2.39gcc_300,300
+1500K_graph-pace,graphite_2.56gcc_1500,1500
+CASE-1_INDEP_0-pace,graphite_2.67gcc_3000,3000
+CASE-2_INDEP_0-pace,LD liquid_0.5gcc_1000,1000
+CASE-3_INDEP_0-pace,LD liquid_1.0gcc_2000,2000
+CASE-4_INDEP_0-pace,HD liquid_2.0gcc_6000,6000
+7000K_2.0gcc-pace,HD liquid_2.0gcc_7000,7000
+6000K_2.5gcc-pace,HD liquid_2.5gcc_6000,6000
+CASE-5_INDEP_0-pace,HD liquid_3.6gcc_6000,6000
+CASE-6_INDEP_0-pace,HD liquid_3.0gcc_8000,8000
